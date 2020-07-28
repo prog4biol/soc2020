@@ -38,14 +38,19 @@ They usually want to find the top up regulated genes and the top down regulated 
 Let's do it!!
 
 __Where do we start?__
-1. We want to make sure we are only looking at data points that are statically signifant, p-value > 0.001.
-  a. [Sort file by p-value](1_sort_by_pvalue/README.md)
-  b. [Keep only the lines that have a p-value > 0.001](2_significant_only/README.md).
+1. We want to make sure we are only looking at data points that are statically signifant, p-value > 0.001.  
+  a. [Sort file by p-value](1_sort_by_pvalue/README.md)  
+  b. [Keep only the lines that have a p-value > 0.001](2_significant_only/README.md).  
 
-2. Now let's find our most up- and down- regulated genes. Which means we need to sort the log2fold column (4th column)
- a. [Sort file by log2foldchange](3_sort_log2fold/README.md)
- b.  [Get the top 100 up/down-regulated genes](3_sort_log2fold/README.md#get_the_extremes) 
- c.  [Do it a different way](3_sort_log2fold/README.md#other_way_to_do_the_same) 
+2. Now let's find our most up- and down- regulated genes. Which means we need to sort the log2fold column (4th column)  
+ a. [Sort file by log2foldchange](3_sort_log2fold/README.md)  
+ b.  [Get the top 100 up/down-regulated genes](3_sort_log2fold/README.md#get_the_extremes)   
+ c.  [Do it a different way](3_sort_log2fold/README.md#other_way_to_do_the_same)   
+
+
+
+
+
 
 ## of the top 100 up and down, are any involved in stem cell proliferation (http://purl.obolibrary.org/obo/GO_0072089), pigmenation (http://purl.obolibrary.org/obo/GO_0043473)?
 
