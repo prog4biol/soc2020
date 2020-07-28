@@ -32,80 +32,20 @@ ENSGALG00000000067	SPR	0.0560358954256604	-0.4
 ENSGALG00000000071		0.878861305389193	0
 ```
 
+__What is it that people want to do usually with differential expression data?__
+They usually want to find the top up regulated genes and the top down regulated genes.
 
-__Now, you want to get rid of any differential expression data points that have a p-value > 0.001.__
+Let's do it!!
 
-What will you have to do with your tsv file? 
-1. [Sort it by p-value](sort_pvalue.md)
+__Where do we start?__
+1. We want to make sure we are only looking at data points that are statically signifant, p-value > 0.001.
+  a. [Sort file by p-value](1_sort_by_pvalue/README.md)
+  b. [Keep only the lines that have a p-value > 0.001](2_significant_only/README.md).
 
-
-cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -t$'\t' -k3 -g > sorted_by_p.tsv
-# open file remove any lines that are larger that 0.001
-
-(base) mp181vbhv2j:E-MTAB-2754 smr$  sort -t$'\t' -k4 sorted_by_p.tsv | head
-ENSGALG00000004956	GPI	0.000716071813497406	-0.2
-ENSGALG00000013726	PAICS	0.000641946257320909	-0.2
-ENSGALG00000028851	RAB8A	0.000906523776344118	-0.2
-ENSGALG00000000573	PER3	3.83839038727545e-06	-0.3
-ENSGALG00000000777	EYA3	2.07370849415051e-05	-0.3
-ENSGALG00000001024	TPRG1L	0.000101701679175278	-0.3
-ENSGALG00000001231	SAMHD1	8.36393218354028e-05	-0.3
-ENSGALG00000001253	RC3H2	2.11973648517545e-05	-0.3
-ENSGALG00000001428	EFHD1	0.00080177461598348	-0.3
-ENSGALG00000001501	MAPK3	1.88860781387958e-05	-0.3
-(base) mp181vbhv2j:E-MTAB-2754 smr$  sort -t$'\t' -k4 -r sorted_by_p.tsv | head
-Gene ID	Gene Name	g1_g2.p-value	g1_g2.log2foldchange
-ENSGALG00000026591	GNG12	2.48713188587058e-106	5.1
-ENSGALG00000006456	C14H16orf45	4.83210331845551e-134	4.3
-ENSGALG00000053328		6.06296117790466e-59	4.2
-ENSGALG00000016602	ARHGAP6	3.50644039913878e-72	4.2
-ENSGALG00000002118	KCNMB1	4.08819738778984e-92	4
-ENSGALG00000033941	RORC	4.14460236124194e-76	3.8
-ENSGALG00000048302		9.7889149897967e-41	3.7
-ENSGALG00000030602	ADAM33	8.84702727723148e-114	3.7
-ENSGALG00000007416	CD3E	2.42674555681373e-48	3.6
-
-
-cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -t$'\t' -k3 -g | cat -n  |  more
-## find your cutoff line ===> 2206
-
-cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -t$'\t' -k3 -g | head -n 2206
-
-(base) mp181vbhv2j:E-MTAB-2754 smr$ cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -t$'\t' -k3 -g | head -n 2206 | sort -t$'\t' -k4 -n -r sorted_by_p.tsv | head
-ENSGALG00000026591	GNG12	2.48713188587058e-106	5.1
-ENSGALG00000006456	C14H16orf45	4.83210331845551e-134	4.3
-ENSGALG00000053328		6.06296117790466e-59	4.2
-ENSGALG00000016602	ARHGAP6	3.50644039913878e-72	4.2
-ENSGALG00000002118	KCNMB1	4.08819738778984e-92	4
-ENSGALG00000033941	RORC	4.14460236124194e-76	3.8
-ENSGALG00000048302		9.7889149897967e-41	3.7
-ENSGALG00000030602	ADAM33	8.84702727723148e-114	3.7
-ENSGALG00000007416	CD3E	2.42674555681373e-48	3.6
-ENSGALG00000047182		8.49031135004632e-58	3.5
-(base) mp181vbhv2j:E-MTAB-2754 smr$ cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -t$'\t' -k3 -g | head -n 2206 | sort -t$'\t' -k4 -n  | head
-ENSGALG00000020078	H3F3C	0	-8
-ENSGALG00000002286	H3F3B	0	-7
-ENSGALG00000039102	TOX	3.14377780904377e-137	-5.3
-ENSGALG00000005610	SLC44A3	2.67237306894498e-109	-4.8
-ENSGALG00000048035	GCNT2	4.81421762236255e-69	-4.5
-ENSGALG00000027365	HIVEP3	1.55554665427949e-117	-4.1
-ENSGALG00000031768	SPO11	3.97130937569517e-59	-3.9
-ENSGALG00000039264	SLA	3.3960317531256e-97	-3.9
-ENSGALG00000016906	SPRY2	7.1093323557451e-55	-3.8
-ENSGALG00000027353	C10orf71	1.29880461971355e-212	-3.7
-
-
-
-cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -t$'\t' -k3 -g | head -n 2206 | sort -t$'\t' -k4 -n | head -100  | cut -f 1 > dn_reg.txt
-cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -t$'\t' -k3 -g | head -n 2206 | sort -t$'\t' -k4 -n -r  | head -100  | cut -f 1 > up_reg.txt
-grep -f up_reg.txt mart_export.txt
-grep -f dn_reg.txt mart_export.txt
-
-
-## just top 10
-head -10 up_reg.txt > top10_up_reg.txt
-head -10 dn_reg.txt > top10_dn_reg.txt
-
+2. Now let's find our most up- and down- regulated genes. Which means we need to sort the log2fold column (4th column)
+ a. [Sort file by log2foldchange](3_sort_log2fold/README.md)
+ b.  [Get the top 100 up/down-regulated genes](3_sort_log2fold/README.md#get_the_extremes) 
+ c.  [Do it a different way](3_sort_log2fold/README.md#other_way_to_do_the_same) 
 
 ## of the top 100 up and down, are any involved in stem cell proliferation (http://purl.obolibrary.org/obo/GO_0072089), pigmenation (http://purl.obolibrary.org/obo/GO_0043473)?
 
