@@ -32,27 +32,39 @@ ENSGALG00000000067	SPR	0.0560358954256604	-0.4
 ENSGALG00000000071		0.878861305389193	0
 ```
 
-__What is it that people want to do usually with differential expression data?__
+__What is it that people want to do usually with differential expression data?__  
 They usually want to find the top up regulated genes and the top down regulated genes.
 
 Let's do it!!
 
-__Where do we start?__
+Where do we start?
 1. We want to make sure we are only looking at data points that are statically signifant, p-value > 0.001.  
   a. [Sort file by p-value](1_sort_by_pvalue/README.md)  
   b. [Keep only the lines that have a p-value > 0.001](2_significant_only/README.md).  
 
-2. Now let's find our most up- and down- regulated genes. Which means we need to sort the log2fold column (4th column)  
+2. Now let's find our most up- and down- regulated genes. Which means we need to sort the log2foldchage column (4th column)  
  a. [Sort file by log2foldchange](3_sort_log2fold/README.md)  
- b.  [Get the top 100 up/down-regulated genes](3_sort_log2fold/README.md#get-the-extremes)   
- c.  [Do it a different way](3_sort_log2fold/README.md#other-way-to-do-the-same)   
+ b. [Get the top 100 up/down-regulated genes](3_sort_log2fold/README.md#get-the-extremes)   
+ c. [Get a list of all the genes with the most signifant changes](#most-signficant-changes)   
+ d. [Do it a different way](3_sort_log2fold/README.md#other-way-to-do-the-same)   
+
+
+__Now what are these genes?__  
+Here is where we are going to mine data from Ensembl biomart. Biomart is a SUPER handy tool if your organims is in Ensembl. Ensembl has 5 different sites for different groups of organisms. 
+
+Ensembl (veterbrates)
+Ensembl Plant
+Ensembl Fungi
+Ensembl Bacteria
+Ensembl Metazoa
 
 
 
+__Are any involved in a process I am super interested in?__  
 
 
 
-## of the top 100 up and down, are any involved in stem cell proliferation (http://purl.obolibrary.org/obo/GO_0072089), pigmenation (http://purl.obolibrary.org/obo/GO_0043473)?
+of the top 100 up and down, are any involved in stem cell proliferation (http://purl.obolibrary.org/obo/GO_0072089), pigmenation (http://purl.obolibrary.org/obo/GO_0043473)?
 
 (base) mp181vbhv2j:E-MTAB-2754 smr$ grep -f up_reg.txt  proliferation_mart_export.txt
 ENSGALG00000040493	ENSGALG00000040493.2	pleiotrophin [Source:NCBI gene;Acc:418125]	GO:0007406	negative regulation of neuroblast proliferation
@@ -64,13 +76,10 @@ ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [So
 ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [Source:NCBI gene;Acc:424306]	GO:1903056	regulation of melanosome organization
 
 
-awk -F "\t" '{if ($3 <= 1e-5 && $4 > 2) {print $1}}' E-MTAB-2754-analytics.tsv
-awk -F "\t" '{if ($3 <= 1e-5 && $4 > 2) {print $1}}' E-MTAB-2754-analytics.tsv  | wc -l
-      59
-
-## BIOMART
 
 
+
+BIOMART Query:
 Dataset
 Chicken genes (GRCg6a)
 Filters
