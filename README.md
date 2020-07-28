@@ -44,8 +44,8 @@ __Where do we start?__
 
 2. Now let's find our most up- and down- regulated genes. Which means we need to sort the log2fold column (4th column)  
  a. [Sort file by log2foldchange](3_sort_log2fold/README.md)  
- b.  [Get the top 100 up/down-regulated genes](3_sort_log2fold/README.md#get_the_extremes)   
- c.  [Do it a different way](3_sort_log2fold/README.md#other_way_to_do_the_same)   
+ b.  [Get the top 100 up/down-regulated genes](3_sort_log2fold/README.md#get-the-extremes)   
+ c.  [Do it a different way](3_sort_log2fold/README.md#other-way-to-do-the-same)   
 
 
 
