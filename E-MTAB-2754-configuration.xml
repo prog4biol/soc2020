@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration experimentType="rnaseq_mrna_differential" r_data="1">
+    <analytics>
+        <assay_groups>
+            <assay_group id="g1" label="wild type genotype">
+                <assay>ERR565907</assay>
+                <assay>ERR565906</assay>
+                <assay>ERR565905</assay>
+            </assay_group>
+            <assay_group id="g2" label="h3.3a-/-, h3.3b-/-">
+                <assay>ERR565904</assay>
+                <assay>ERR565903</assay>
+                <assay>ERR565908</assay>
+            </assay_group>
+        </assay_groups>
+        <contrasts>
+            <contrast id="g1_g2">
+                <name>'h3.3a-/-, h3.3b-/-' vs 'wild type genotype'</name>
+                <reference_assay_group>g1</reference_assay_group>
+                <test_assay_group>g2</test_assay_group>
+            </contrast>
+        </contrasts>
+    </analytics>
+</configuration>

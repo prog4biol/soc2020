@@ -1,0 +1,30 @@
+E-MTAB-2754		ERR565903	characteristic	cell line	DT40	http://www.ebi.ac.uk/efo/EFO_0006274
+E-MTAB-2754		ERR565903	characteristic	cell type	lymphocyte of B lineage	http://purl.obolibrary.org/obo/CL_0000945
+E-MTAB-2754		ERR565903	characteristic	genotype	h3.3a-/-, h3.3b-/-
+E-MTAB-2754		ERR565903	characteristic	organism	Gallus gallus	http://purl.obolibrary.org/obo/NCBITaxon_9031
+E-MTAB-2754		ERR565903	factor	genotype	h3.3a-/-, h3.3b-/-
+E-MTAB-2754		ERR565904	characteristic	cell line	DT40	http://www.ebi.ac.uk/efo/EFO_0006274
+E-MTAB-2754		ERR565904	characteristic	cell type	lymphocyte of B lineage	http://purl.obolibrary.org/obo/CL_0000945
+E-MTAB-2754		ERR565904	characteristic	genotype	h3.3a-/-, h3.3b-/-
+E-MTAB-2754		ERR565904	characteristic	organism	Gallus gallus	http://purl.obolibrary.org/obo/NCBITaxon_9031
+E-MTAB-2754		ERR565904	factor	genotype	h3.3a-/-, h3.3b-/-
+E-MTAB-2754		ERR565905	characteristic	cell line	DT40	http://www.ebi.ac.uk/efo/EFO_0006274
+E-MTAB-2754		ERR565905	characteristic	cell type	lymphocyte of B lineage	http://purl.obolibrary.org/obo/CL_0000945
+E-MTAB-2754		ERR565905	characteristic	genotype	wild type genotype
+E-MTAB-2754		ERR565905	characteristic	organism	Gallus gallus	http://purl.obolibrary.org/obo/NCBITaxon_9031
+E-MTAB-2754		ERR565905	factor	genotype	wild type genotype
+E-MTAB-2754		ERR565906	characteristic	cell line	DT40	http://www.ebi.ac.uk/efo/EFO_0006274
+E-MTAB-2754		ERR565906	characteristic	cell type	lymphocyte of B lineage	http://purl.obolibrary.org/obo/CL_0000945
+E-MTAB-2754		ERR565906	characteristic	genotype	wild type genotype
+E-MTAB-2754		ERR565906	characteristic	organism	Gallus gallus	http://purl.obolibrary.org/obo/NCBITaxon_9031
+E-MTAB-2754		ERR565906	factor	genotype	wild type genotype
+E-MTAB-2754		ERR565907	characteristic	cell line	DT40	http://www.ebi.ac.uk/efo/EFO_0006274
+E-MTAB-2754		ERR565907	characteristic	cell type	lymphocyte of B lineage	http://purl.obolibrary.org/obo/CL_0000945
+E-MTAB-2754		ERR565907	characteristic	genotype	wild type genotype
+E-MTAB-2754		ERR565907	characteristic	organism	Gallus gallus	http://purl.obolibrary.org/obo/NCBITaxon_9031
+E-MTAB-2754		ERR565907	factor	genotype	wild type genotype
+E-MTAB-2754		ERR565908	characteristic	cell line	DT40	http://www.ebi.ac.uk/efo/EFO_0006274
+E-MTAB-2754		ERR565908	characteristic	cell type	lymphocyte of B lineage	http://purl.obolibrary.org/obo/CL_0000945
+E-MTAB-2754		ERR565908	characteristic	genotype	h3.3a-/-, h3.3b-/-
+E-MTAB-2754		ERR565908	characteristic	organism	Gallus gallus	http://purl.obolibrary.org/obo/NCBITaxon_9031
+E-MTAB-2754		ERR565908	factor	genotype	h3.3a-/-, h3.3b-/-

@@ -1,0 +1,34 @@
+Comment[ArrayExpressAccession]	E-MTAB-2754
+MAGE-TAB Version	1.1					
+Investigation Title	RNA-seq of H3.3 knockout and wild type chicken DT40 cells					
+Comment[Submitted Name]	RNA-seq of H3.3 knockout and wild type chicken DT40 cells
+Experiment Description	RNA-seq was performed for transcriptional analysis of wild-type DT40 cells (Gallus gallus, B-cell line) and a H3.3 knockout line (h3.3a-/-, h3.3b-/-).  H3.3 is a H3 histone variant encoded on two genes (H3.3A and H3.3B) in chickens.					
+Experimental Factor Name	genotype					
+Experimental Factor Type	genotype					
+Experimental Factor Term Source REF						
+Experimental Factor Term Accession Number						
+Person Last Name	Sale	Frey				
+Person First Name	Julian	Alexander				
+Person Mid Initials						
+Person Email	jes@mrc-lmb.cam.ac.uk	afrey@mrc-lmb.cam.ac.uk				
+Person Phone						
+Person Fax						
+Person Address	Francis Crick Avenue, Cambridge Biomedical Campus, Cambridge CB2 0QH	Francis Crick Avenue, Cambridge Biomedical Campus, Cambridge CB2 0QH				
+Person Affiliation	MRC Laboratory of Molecular Biology	MRC Laboratory of Molecular Biology				
+Person Roles	investigator;submitter	investigator;submitter				
+Date of Experiment	2013-11-05					
+Public Release Date	2014-08-31					
+Protocol Name	P-MTAB-40162	P-MTAB-40163	P-MTAB-40164	P-MTAB-40165	P-MTAB-40166	P-MTAB-40167
+Protocol Type	growth protocol	nucleic acid extraction protocol	nucleic acid sequencing protocol	nucleic acid library construction protocol	high throughput sequence alignment protocol	normalization data transformation protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0003789	EFO_0002944	EFO_0004170	EFO_0004184	EFO_0004917	EFO_0003816
+Protocol Description	Chicken DT40 cells were grown in RPMI-1640 with 7% FBS, 3% chicken serum and supplemented with pen/strep at 37C with 10% CO2.	The source (starting sample for the experiment) were wild type and H3.3 knockout DT40 cells. RNA was extracted using an RNeasy Mini Kit (Qiagen). The RNA quality and quantity was determined using an Agilent 2100 Bioanalyzer (Agilent Technologies).	Sequencing of RNA from each pool was carried out by BGI (Beijing Genomics Institute) using an Illumina HiSeq2000	Libraries were constructed by BGI (Beijing Genomics Institute)	FASTQ files (Raw data files) were aligned to the Chicken cDNA derived from the Galgal4 genome assembly (from:ftp://ftp.ensembl.org/pub/release-74/fasta/gallus_gallus/cdna/) using Bowtie. A maximum of two mismatches per read were allowed. Only sequences that mapped to one location on the genome were retained. Read counts were identified for each mapped transcript.	The DEseq package from Bioconductor (http://bioconductor.org/) was then used to normalise read counts. Differential expression and associated statistical significance was computed using a negative binomial test from the DESeq package. Graphical representations and further analysis were performed using homemade R scripts. The mapping of dysregulated genes to the chicken karyotype was performed using Ensembl (http://www.ensembl.org/index.html).
+Protocol Hardware			Illumina HiSeq 2000			
+Protocol Software						
+Term Source Name	EFO
+Term Source File	http://www.ebi.ac.uk/efo/					
+Term Source Version						
+Comment[AEExperimentType]	RNA-seq of coding RNA					
+Comment[SecondaryAccession]	ERP006370
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR565903-ERR565908
+SDRF File	E-MTAB-2754.sdrf.txt

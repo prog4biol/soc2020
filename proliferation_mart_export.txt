@@ -1,0 +1,105 @@
+Gene stable ID	Gene stable ID version	Gene description	GO term accession	GO term name
+ENSGALG00000009966	ENSGALG00000009966.6	fibroblast growth factor receptor substrate 2 [Source:NCBI gene;Acc:417845]	GO:0007405	neuroblast proliferation
+ENSGALG00000039349	ENSGALG00000039349.2	disrupted in schizophrenia 1 [Source:NCBI gene;Acc:100859633]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000011870	ENSGALG00000011870.5	hypoxia inducible factor 1 subunit alpha [Source:NCBI gene;Acc:374177]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000034168	ENSGALG00000034168.2	Wnt family member 5A [Source:NCBI gene;Acc:395703]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000039228	ENSGALG00000039228.3	ZFP36 ring finger protein like 1 [Source:NCBI gene;Acc:101751828]	GO:0072091	regulation of stem cell proliferation
+ENSGALG00000012123	ENSGALG00000012123.6	paired box 6 [Source:NCBI gene;Acc:395943]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000007161	ENSGALG00000007161.5	leucine rich repeat kinase 2 [Source:NCBI gene;Acc:427844]	GO:1902692	regulation of neuroblast proliferation
+ENSGALG00000008912	ENSGALG00000008912.6	ATP-binding cassette, sub-family B (MDR/TAP), member 1-like A [Source:NCBI gene;Acc:420534]	GO:0072089	stem cell proliferation
+ENSGALG00000043711	ENSGALG00000043711.3	argonaute 3, RISC catalytic component [Source:NCBI gene;Acc:419628]	GO:0072091	regulation of stem cell proliferation
+ENSGALG00000043711	ENSGALG00000043711.3	argonaute 3, RISC catalytic component [Source:NCBI gene;Acc:419628]	GO:0072091	regulation of stem cell proliferation
+ENSGALG00000010671	ENSGALG00000010671.6	heterogeneous nuclear ribonucleoprotein U [Source:NCBI gene;Acc:421492]	GO:2000648	positive regulation of stem cell proliferation
+ENSGALG00000007119	ENSGALG00000007119.6	diacylglycerol lipase beta [Source:NCBI gene;Acc:416625]	GO:0007405	neuroblast proliferation
+ENSGALG00000008702	ENSGALG00000008702.7	ovo like zinc finger 3 [Source:NCBI gene;Acc:416720]	GO:2000647	negative regulation of stem cell proliferation
+ENSGALG00000039735	ENSGALG00000039735.2	echinoderm microtubule associated protein like 1 [Source:NCBI gene;Acc:423452]	GO:0007405	neuroblast proliferation
+ENSGALG00000010560	ENSGALG00000010560.2	eukaryotic translation initiation factor 2 alpha kinase 2 [Source:NCBI gene;Acc:395147]	GO:1902033	regulation of hematopoietic stem cell proliferation
+ENSGALG00000012163	ENSGALG00000012163.6	brain derived neurotrophic factor [Source:NCBI gene;Acc:396186]	GO:0007406	negative regulation of neuroblast proliferation
+ENSGALG00000036043	ENSGALG00000036043.3	T-box 3 [Source:NCBI gene;Acc:374202]	GO:2000648	positive regulation of stem cell proliferation
+ENSGALG00000034118	ENSGALG00000034118.3	SRY-box 18 [Source:NCBI gene;Acc:374200]	GO:0072091	regulation of stem cell proliferation
+ENSGALG00000032590	ENSGALG00000032590.2	nudE neurodevelopment protein 1 [Source:NCBI gene;Acc:416597]	GO:0007405	neuroblast proliferation
+ENSGALG00000034831	ENSGALG00000034831.2	YTH domain family, member 2 [Source:NCBI gene;Acc:419583]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000008073	ENSGALG00000008073.7	neurofibromin 2 [Source:NCBI gene;Acc:395158]	GO:0072091	regulation of stem cell proliferation
+ENSGALG00000026811	ENSGALG00000026811.3	SH2 domain containing adaptor protein B [Source:NCBI gene;Acc:427280]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000000902	ENSGALG00000000902.7	keratinocyte differentiation factor 1 [Source:NCBI gene;Acc:769268]	GO:2000647	negative regulation of stem cell proliferation
+ENSGALG00000008827	ENSGALG00000008827.6	fermitin family member 1 [Source:NCBI gene;Acc:416727]	GO:2000647	negative regulation of stem cell proliferation
+ENSGALG00000009261	ENSGALG00000009261.7	ventral anterior homeobox 1 [Source:NCBI gene;Acc:395582]	GO:0007406	negative regulation of neuroblast proliferation
+ENSGALG00000033469	ENSGALG00000033469.2	lysine demethylase 1A [Source:NCBI gene;Acc:419571]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000012290	ENSGALG00000012290.6	SRY-box 10 [Source:NCBI gene;Acc:395573]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000032994	ENSGALG00000032994.2	SRY-box 17 [Source:NCBI gene;Acc:428534]	GO:0072091	regulation of stem cell proliferation
+ENSGALG00000039786	ENSGALG00000039786.2	fibroblast growth factor receptor 1 [Source:NCBI gene;Acc:396516]	GO:0021847	ventricular zone neuroblast division
+ENSGALG00000039474	ENSGALG00000039474.3	inhibitor of DNA binding 4, HLH protein [Source:NCBI gene;Acc:374150]	GO:0007405	neuroblast proliferation
+ENSGALG00000001079	ENSGALG00000001079.6	Wnt family member 3 [Source:NCBI gene;Acc:374142]	GO:0072089	stem cell proliferation
+ENSGALG00000001079	ENSGALG00000001079.6	Wnt family member 3 [Source:NCBI gene;Acc:374142]	GO:1905474	canonical Wnt signaling pathway involved in stem cell proliferation
+ENSGALG00000023303	ENSGALG00000023303.4	SIX homeobox 2 [Source:NCBI gene;Acc:724086]	GO:0097168	mesenchymal stem cell proliferation
+ENSGALG00000032259	ENSGALG00000032259.2	SIX homeobox 3 [Source:NCBI gene;Acc:378786]	GO:1902692	regulation of neuroblast proliferation
+ENSGALG00000032259	ENSGALG00000032259.2	SIX homeobox 3 [Source:NCBI gene;Acc:378786]	GO:1902692	regulation of neuroblast proliferation
+ENSGALG00000013183	ENSGALG00000013183.7	telomerase reverse transcriptase [Source:NCBI gene;Acc:420972]	GO:2000648	positive regulation of stem cell proliferation
+ENSGALG00000010847	ENSGALG00000010847.5	vascular endothelial growth factor C [Source:NCBI gene;Acc:422573]	GO:1902462	positive regulation of mesenchymal stem cell proliferation
+ENSGALG00000006379	ENSGALG00000006379.6	sonic hedgehog [Source:NCBI gene;Acc:395615]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000006379	ENSGALG00000006379.6	sonic hedgehog [Source:NCBI gene;Acc:395615]	GO:0007405	neuroblast proliferation
+ENSGALG00000012921	ENSGALG00000012921.7	ETS variant 6 [Source:NCBI gene;Acc:395750]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000047990	ENSGALG00000047990.1	stimulator of chondrogenesis 1 [Source:NCBI gene;Acc:422563]	GO:0097168	mesenchymal stem cell proliferation
+ENSGALG00000010745	ENSGALG00000010745.4	high mobility group box 2 [Source:NCBI gene;Acc:396482]	GO:0072091	regulation of stem cell proliferation
+ENSGALG00000010745	ENSGALG00000010745.4	high mobility group box 2 [Source:NCBI gene;Acc:396482]	GO:0072091	regulation of stem cell proliferation
+ENSGALG00000009300	ENSGALG00000009300.7	NUMB, endocytic adaptor protein [Source:NCBI gene;Acc:395639]	GO:0007405	neuroblast proliferation
+ENSGALG00000009300	ENSGALG00000009300.7	NUMB, endocytic adaptor protein [Source:NCBI gene;Acc:395639]	GO:0021849	neuroblast division in subventricular zone
+ENSGALG00000036255	ENSGALG00000036255.2	Wnt family member 7B [Source:NCBI gene;Acc:427937]	GO:0072089	stem cell proliferation
+ENSGALG00000007794	ENSGALG00000007794.6	dopamine receptor D2 [Source:NCBI gene;Acc:428252]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000014233	ENSGALG00000014233.4	fibulin 1 [Source:NCBI gene;Acc:373979]	GO:2000647	negative regulation of stem cell proliferation
+ENSGALG00000036114	ENSGALG00000036114.2	smoothened, frizzled class receptor [Source:NCBI gene;Acc:395949]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000040266	ENSGALG00000040266.2	GLI family zinc finger 3 [Source:NCBI gene;Acc:420769]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000005834	ENSGALG00000005834.5	platelet activating factor acetylhydrolase 1b regulatory subunit 1 [Source:NCBI gene;Acc:374224]	GO:0007405	neuroblast proliferation
+ENSGALG00000038189	ENSGALG00000038189.2	BRISC and BRCA1 A complex member 1 [Source:NCBI gene;Acc:776677]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000005803	ENSGALG00000005803.6	zinc and ring finger 3 [Source:NCBI gene;Acc:416919]	GO:0072089	stem cell proliferation
+ENSGALG00000049667	ENSGALG00000049667.1	family with sequence similarity 19 member A1, C-C motif chemokine like [Source:NCBI gene;Acc:416089]	GO:1902692	regulation of neuroblast proliferation
+ENSGALG00000049667	ENSGALG00000049667.1	family with sequence similarity 19 member A1, C-C motif chemokine like [Source:NCBI gene;Acc:416089]	GO:1902692	regulation of neuroblast proliferation
+ENSGALG00000049667	ENSGALG00000049667.1	family with sequence similarity 19 member A1, C-C motif chemokine like [Source:NCBI gene;Acc:416089]	GO:1902692	regulation of neuroblast proliferation
+ENSGALG00000025876	ENSGALG00000025876.3	thrombopoietin [Source:NCBI gene;Acc:414803]	GO:1902035	positive regulation of hematopoietic stem cell proliferation
+ENSGALG00000015305	ENSGALG00000015305.6	nuclear receptor subfamily 2 group E member 1 [Source:NCBI gene;Acc:396082]	GO:2000648	positive regulation of stem cell proliferation
+ENSGALG00000010967	ENSGALG00000010967.6	dedicator of cytokinesis 7 [Source:NCBI gene;Acc:424687]	GO:0045200	establishment of neuroblast polarity
+ENSGALG00000031960	ENSGALG00000031960.2	lymphoid enhancer binding factor 1 [Source:NCBI gene;Acc:395865]	GO:0021873	forebrain neuroblast division
+ENSGALG00000031960	ENSGALG00000031960.2	lymphoid enhancer binding factor 1 [Source:NCBI gene;Acc:395865]	GO:0021873	forebrain neuroblast division
+ENSGALG00000031960	ENSGALG00000031960.2	lymphoid enhancer binding factor 1 [Source:NCBI gene;Acc:395865]	GO:0021873	forebrain neuroblast division
+ENSGALG00000009241	ENSGALG00000009241.5	secreted frizzled related protein 2 [Source:NCBI gene;Acc:395546]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000034196	ENSGALG00000034196.3	Wnt family member 2B [Source:NCBI gene;Acc:374243]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000001028	ENSGALG00000001028.5	ring finger protein 43 [Source:NCBI gene;Acc:100857874]	GO:0072089	stem cell proliferation
+ENSGALG00000011206	ENSGALG00000011206.6	KIT ligand [Source:NCBI gene;Acc:396028]	GO:1902035	positive regulation of hematopoietic stem cell proliferation
+ENSGALG00000042657	ENSGALG00000042657.2	Wnt family member 3A [Source:NCBI gene;Acc:395396]	GO:0021874	Wnt signaling pathway involved in forebrain neuroblast division
+ENSGALG00000032398	ENSGALG00000032398.2	abnormal spindle microtubule assembly [Source:NCBI gene;Acc:424354]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000032398	ENSGALG00000032398.2	abnormal spindle microtubule assembly [Source:NCBI gene;Acc:424354]	GO:0021873	forebrain neuroblast division
+ENSGALG00000016899	ENSGALG00000016899.6	dopachrome tautomerase [Source:NCBI gene;Acc:395775]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000016899	ENSGALG00000016899.6	dopachrome tautomerase [Source:NCBI gene;Acc:395775]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000016899	ENSGALG00000016899.6	dopachrome tautomerase [Source:NCBI gene;Acc:395775]	GO:0021847	ventricular zone neuroblast division
+ENSGALG00000016899	ENSGALG00000016899.6	dopachrome tautomerase [Source:NCBI gene;Acc:395775]	GO:0021847	ventricular zone neuroblast division
+ENSGALG00000041927	ENSGALG00000041927.2	frizzled class receptor 9 [Source:NCBI gene;Acc:373886]	GO:0007405	neuroblast proliferation
+ENSGALG00000002192	ENSGALG00000002192.7	protein tyrosine phosphatase, receptor type C [Source:NCBI gene;Acc:386580]	GO:2000648	positive regulation of stem cell proliferation
+ENSGALG00000014873	ENSGALG00000014873.3	gap junction protein alpha 1 [Source:NCBI gene;Acc:395278]	GO:2000648	positive regulation of stem cell proliferation
+ENSGALG00000032768	ENSGALG00000032768.2	SRY-box 5 [Source:NCBI gene;Acc:418195]	GO:0055059	asymmetric neuroblast division
+ENSGALG00000037203	ENSGALG00000037203.3	catenin beta 1 [Source:NCBI gene;Acc:395964]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000040493	ENSGALG00000040493.2	pleiotrophin [Source:NCBI gene;Acc:418125]	GO:0007406	negative regulation of neuroblast proliferation
+ENSGALG00000005660	ENSGALG00000005660.6	neurofibromin 1 [Source:NCBI gene;Acc:396085]	GO:0007406	negative regulation of neuroblast proliferation
+ENSGALG00000042308	ENSGALG00000042308.3	frizzled class receptor 3 [Source:NCBI gene;Acc:395572]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000002447	ENSGALG00000002447.6	catenin alpha 1 [Source:NCBI gene;Acc:416184]	GO:0007406	negative regulation of neuroblast proliferation
+ENSGALG00000039472	ENSGALG00000039472.2	squamous cell carcinoma antigen recognized by T-cells 3 [Source:NCBI gene;Acc:416890]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000009948	ENSGALG00000009948.6	hedgehog interacting protein [Source:NCBI gene;Acc:422460]	GO:0007405	neuroblast proliferation
+ENSGALG00000028253	ENSGALG00000028253.2	ataxin 1 like [Source:NCBI gene;Acc:427566]	GO:1902035	positive regulation of hematopoietic stem cell proliferation
+ENSGALG00000019622	ENSGALG00000019622.5	tripartite motif containing 71 [Source:NCBI gene;Acc:428445]	GO:0072089	stem cell proliferation
+ENSGALG00000031423	ENSGALG00000031423.2	DMRT like family A2 [Source:NCBI gene;Acc:107054041]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000041370	ENSGALG00000041370.2	zinc finger protein 335 [Source:NCBI gene;Acc:396131]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000038902	ENSGALG00000038902.2	Pim-1 proto-oncogene, serine/threonine kinase [Source:NCBI gene;Acc:100858838]	GO:1902033	regulation of hematopoietic stem cell proliferation
+ENSGALG00000006956	ENSGALG00000006956.6	ariadne RBR E3 ubiquitin protein ligase 2 [Source:NCBI gene;Acc:416061]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000026744	ENSGALG00000026744.3	orthopedia homeobox [Source:NCBI gene;Acc:554220]	GO:0002052	positive regulation of neuroblast proliferation
+ENSGALG00000020262	ENSGALG00000020262.5	NFKB activating protein like [Source:NCBI gene;Acc:422368]	GO:0071425	hematopoietic stem cell proliferation
+ENSGALG00000036492	ENSGALG00000036492.2	diacylglycerol lipase alpha [Source:NCBI gene;Acc:426017]	GO:0007405	neuroblast proliferation
+ENSGALG00000034306	ENSGALG00000034306.2	neuronal differentiation 4 [Source:NCBI gene;Acc:395959]	GO:0007405	neuroblast proliferation
+ENSGALG00000012755	ENSGALG00000012755.3	insulin like growth factor 1 [Source:NCBI gene;Acc:418090]	GO:0007405	neuroblast proliferation
+ENSGALG00000001245	ENSGALG00000001245.7	sirtuin 6 [Source:NCBI gene;Acc:428332]	GO:2000648	positive regulation of stem cell proliferation
+ENSGALG00000037082	ENSGALG00000037082.2	achaete-scute family bHLH transcription factor 1 [Source:NCBI gene;Acc:386573]	GO:0007405	neuroblast proliferation
+ENSGALG00000038154	ENSGALG00000038154.2	Yes associated protein 1 [Source:NCBI gene;Acc:396171]	GO:0072091	regulation of stem cell proliferation
+ENSGALG00000033231	ENSGALG00000033231.3	Rac GTPase activating protein 1 [Source:NCBI gene;Acc:426884]	GO:0007405	neuroblast proliferation
+ENSGALG00000049996	ENSGALG00000049996.1	ovo like transcriptional repressor 1 [Source:HGNC Symbol;Acc:HGNC:8525]	GO:2000647	negative regulation of stem cell proliferation
+ENSGALG00000039861	ENSGALG00000039861.2	plexin B2 [Source:NCBI gene;Acc:425938]	GO:0007405	neuroblast proliferation
+ENSGALG00000011835	ENSGALG00000011835.7	fibroblast growth factor 2 [Source:NCBI gene;Acc:396413]	GO:0072089	stem cell proliferation
+ENSGALG00000009944	ENSGALG00000009944.5	lysine acetyltransferase 7 [Source:NCBI gene;Acc:425530]	GO:1902035	positive regulation of hematopoietic stem cell proliferation
+ENSGALG00000004494	ENSGALG00000004494.7	cyclin E1 [Source:NCBI gene;Acc:426117]	GO:1902462	positive regulation of mesenchymal stem cell proliferation

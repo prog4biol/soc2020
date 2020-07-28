@@ -1,0 +1,126 @@
+Gene stable ID	Gene stable ID version	Gene description	GO term accession	GO term name
+ENSGALG00000049204	ENSGALG00000049204.1	biogenesis of lysosomal organelles complex 1 subunit 6 [Source:NCBI gene;Acc:415447]	GO:0030318	melanocyte differentiation
+ENSGALG00000049204	ENSGALG00000049204.1	biogenesis of lysosomal organelles complex 1 subunit 6 [Source:NCBI gene;Acc:415447]	GO:0043473	pigmentation
+ENSGALG00000017419	ENSGALG00000017419.7	HPS1, biogenesis of lysosomal organelles complex 3 subunit 1 [Source:NCBI gene;Acc:429879]	GO:1903232	melanosome assembly
+ENSGALG00000028009	ENSGALG00000028009.4	von Hippel-Lindau tumor suppressor [Source:NCBI gene;Acc:416117]	GO:0048069	eye pigmentation
+ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [Source:NCBI gene;Acc:424306]	GO:0045636	positive regulation of melanocyte differentiation
+ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [Source:NCBI gene;Acc:424306]	GO:0048066	developmental pigmentation
+ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [Source:NCBI gene;Acc:424306]	GO:1903056	regulation of melanosome organization
+ENSGALG00000031987	ENSGALG00000031987.2	myosin VA [Source:NCBI gene;Acc:396237]	GO:0030318	melanocyte differentiation
+ENSGALG00000031987	ENSGALG00000031987.2	myosin VA [Source:NCBI gene;Acc:396237]	GO:0032400	melanosome localization
+ENSGALG00000031987	ENSGALG00000031987.2	myosin VA [Source:NCBI gene;Acc:396237]	GO:0032402	melanosome transport
+ENSGALG00000031987	ENSGALG00000031987.2	myosin VA [Source:NCBI gene;Acc:396237]	GO:0043473	pigmentation
+ENSGALG00000031987	ENSGALG00000031987.2	myosin VA [Source:NCBI gene;Acc:396237]	GO:0048066	developmental pigmentation
+ENSGALG00000004435	ENSGALG00000004435.6	RAB27A, member RAS oncogene family [Source:NCBI gene;Acc:415410]	GO:0032402	melanosome transport
+ENSGALG00000004435	ENSGALG00000004435.6	RAB27A, member RAS oncogene family [Source:NCBI gene;Acc:415410]	GO:0030318	melanocyte differentiation
+ENSGALG00000004435	ENSGALG00000004435.6	RAB27A, member RAS oncogene family [Source:NCBI gene;Acc:415410]	GO:0032400	melanosome localization
+ENSGALG00000004435	ENSGALG00000004435.6	RAB27A, member RAS oncogene family [Source:NCBI gene;Acc:415410]	GO:0043473	pigmentation
+ENSGALG00000004435	ENSGALG00000004435.6	RAB27A, member RAS oncogene family [Source:NCBI gene;Acc:415410]	GO:0051875	pigment granule localization
+ENSGALG00000004435	ENSGALG00000004435.6	RAB27A, member RAS oncogene family [Source:NCBI gene;Acc:415410]	GO:0051904	pigment granule transport
+ENSGALG00000016034	ENSGALG00000016034.7	attractin [Source:NCBI gene;Acc:422946]	GO:0043473	pigmentation
+ENSGALG00000016615	ENSGALG00000016615.6	G protein-coupled receptor 143 [Source:NCBI gene;Acc:418652]	GO:0032438	melanosome organization
+ENSGALG00000016615	ENSGALG00000016615.6	G protein-coupled receptor 143 [Source:NCBI gene;Acc:418652]	GO:0032400	melanosome localization
+ENSGALG00000016615	ENSGALG00000016615.6	G protein-coupled receptor 143 [Source:NCBI gene;Acc:418652]	GO:0032402	melanosome transport
+ENSGALG00000016615	ENSGALG00000016615.6	G protein-coupled receptor 143 [Source:NCBI gene;Acc:418652]	GO:1902908	regulation of melanosome transport
+ENSGALG00000016615	ENSGALG00000016615.6	G protein-coupled receptor 143 [Source:NCBI gene;Acc:418652]	GO:1903056	regulation of melanosome organization
+ENSGALG00000030802	ENSGALG00000030802.2	shroom family member 2 [Source:NCBI gene;Acc:418651]	GO:0032401	establishment of melanosome localization
+ENSGALG00000013591	ENSGALG00000013591.7	biogenesis of lysosomal organelles complex 1 subunit 4 [Source:NCBI gene;Acc:421000]	GO:0032438	melanosome organization
+ENSGALG00000042389	ENSGALG00000042389.2	engrailed homeobox 1 [Source:NCBI gene;Acc:771008]	GO:0043473	pigmentation
+ENSGALG00000014645	ENSGALG00000014645.6	myocyte enhancer factor 2C [Source:NCBI gene;Acc:769007]	GO:0030318	melanocyte differentiation
+ENSGALG00000051135	ENSGALG00000051135.1	BCL2 like 11 [Source:NCBI gene;Acc:107052854]	GO:0048066	developmental pigmentation
+ENSGALG00000051135	ENSGALG00000051135.1	BCL2 like 11 [Source:NCBI gene;Acc:107052854]	GO:0048070	regulation of developmental pigmentation
+ENSGALG00000015205	ENSGALG00000015205.5	tyrosinase related protein 1 [Source:NCBI gene;Acc:395913]	GO:0032438	melanosome organization
+ENSGALG00000015205	ENSGALG00000015205.5	tyrosinase related protein 1 [Source:NCBI gene;Acc:395913]	GO:0030318	melanocyte differentiation
+ENSGALG00000015205	ENSGALG00000015205.5	tyrosinase related protein 1 [Source:NCBI gene;Acc:395913]	GO:0043473	pigmentation
+ENSGALG00000054486	ENSGALG00000054486.1	melanocortin 1 receptor [Source:NCBI gene;Acc:427562]	GO:0043473	pigmentation
+ENSGALG00000040089	ENSGALG00000040089.2	HPS3, biogenesis of lysosomal organelles complex 2 subunit 1 [Source:NCBI gene;Acc:425047]	GO:0043473	pigmentation
+ENSGALG00000035350	ENSGALG00000035350.2	premelanosome protein [Source:NCBI gene;Acc:396007]	GO:0032438	melanosome organization
+ENSGALG00000004184	ENSGALG00000004184.7	secreted protein acidic and cysteine rich [Source:NCBI gene;Acc:386571]	GO:0043473	pigmentation
+ENSGALG00000004440	ENSGALG00000004440.7	VPS33A, CORVET/HOPS core subunit [Source:NCBI gene;Acc:416861]	GO:0043473	pigmentation
+ENSGALG00000004440	ENSGALG00000004440.7	VPS33A, CORVET/HOPS core subunit [Source:NCBI gene;Acc:416861]	GO:0048070	regulation of developmental pigmentation
+ENSGALG00000032308	ENSGALG00000032308.2	leucine rich melanocyte differentiation associated [Source:HGNC Symbol;Acc:HGNC:23405]	GO:0030318	melanocyte differentiation
+ENSGALG00000011347	ENSGALG00000011347.6	indian hedgehog [Source:NCBI gene;Acc:395801]	GO:0048074	negative regulation of eye pigmentation
+ENSGALG00000003310	ENSGALG00000003310.6	solute carrier family 45 member 2 [Source:NCBI gene;Acc:431665]	GO:0048066	developmental pigmentation
+ENSGALG00000034955	ENSGALG00000034955.2	dynactin subunit 2 [Source:NCBI gene;Acc:395587]	GO:0032402	melanosome transport
+ENSGALG00000031450	ENSGALG00000031450.2	myosin VIIA [Source:NCBI gene;Acc:419085]	GO:0051875	pigment granule localization
+ENSGALG00000031450	ENSGALG00000031450.2	myosin VIIA [Source:NCBI gene;Acc:419085]	GO:0051904	pigment granule transport
+ENSGALG00000012290	ENSGALG00000012290.6	SRY-box 10 [Source:NCBI gene;Acc:395573]	GO:0030318	melanocyte differentiation
+ENSGALG00000016241	ENSGALG00000016241.6	ATPase H+ transporting accessory protein 2 [Source:NCBI gene;Acc:418573]	GO:0048069	eye pigmentation
+ENSGALG00000012689	ENSGALG00000012689.6	kinesin family member 13A [Source:NCBI gene;Acc:420832]	GO:0032438	melanosome organization
+ENSGALG00000037802	ENSGALG00000037802.2	RAB2B, member RAS oncogene family [Source:NCBI gene;Acc:100858328]	GO:0032402	melanosome transport
+ENSGALG00000039583	ENSGALG00000039583.3	melanogenesis associated transcription factor [Source:NCBI gene;Acc:395886]	GO:0030318	melanocyte differentiation
+ENSGALG00000039583	ENSGALG00000039583.3	melanogenesis associated transcription factor [Source:NCBI gene;Acc:395886]	GO:0043473	pigmentation
+ENSGALG00000007794	ENSGALG00000007794.6	dopamine receptor D2 [Source:NCBI gene;Acc:428252]	GO:0043473	pigmentation
+ENSGALG00000007430	ENSGALG00000007430.7	archain 1 [Source:NCBI gene;Acc:770561]	GO:0043473	pigmentation
+ENSGALG00000040266	ENSGALG00000040266.2	GLI family zinc finger 3 [Source:NCBI gene;Acc:420769]	GO:0030318	melanocyte differentiation
+ENSGALG00000001387	ENSGALG00000001387.6	sphingolipid transporter 2 [Source:HGNC Symbol;Acc:HGNC:26992]	GO:0048073	regulation of eye pigmentation
+ENSGALG00000000122	ENSGALG00000000122.6	receptor for activated C kinase 1 [Source:NCBI gene;Acc:417044]	GO:0043473	pigmentation
+ENSGALG00000005595	ENSGALG00000005595.7	HPS4, biogenesis of lysosomal organelles complex 3 subunit 2 [Source:NCBI gene;Acc:416907]	GO:0030318	melanocyte differentiation
+ENSGALG00000005595	ENSGALG00000005595.7	HPS4, biogenesis of lysosomal organelles complex 3 subunit 2 [Source:NCBI gene;Acc:416907]	GO:1903232	melanosome assembly
+ENSGALG00000039101	ENSGALG00000039101.3	agouti signaling protein [Source:NCBI gene;Acc:419147]	GO:0032402	melanosome transport
+ENSGALG00000039101	ENSGALG00000039101.3	agouti signaling protein [Source:NCBI gene;Acc:419147]	GO:0032438	melanosome organization
+ENSGALG00000039101	ENSGALG00000039101.3	agouti signaling protein [Source:NCBI gene;Acc:419147]	GO:0043473	pigmentation
+ENSGALG00000016809	ENSGALG00000016809.6	ectodysplasin A receptor [Source:NCBI gene;Acc:428015]	GO:0043473	pigmentation
+ENSGALG00000031960	ENSGALG00000031960.2	lymphoid enhancer binding factor 1 [Source:NCBI gene;Acc:395865]	GO:0048069	eye pigmentation
+ENSGALG00000015070	ENSGALG00000015070.6	FIG4 phosphoinositide 5-phosphatase [Source:NCBI gene;Acc:421762]	GO:0043473	pigmentation
+ENSGALG00000032502	ENSGALG00000032502.2	HPS5 biogenesis of lysosomal organelles complex 2 subunit 2 [Source:NCBI gene;Acc:107048993]	GO:0043473	pigmentation
+ENSGALG00000011206	ENSGALG00000011206.6	KIT ligand [Source:NCBI gene;Acc:396028]	GO:0045636	positive regulation of melanocyte differentiation
+ENSGALG00000010869	ENSGALG00000010869.6	Myb like, SWIRM and MPN domains 1 [Source:NCBI gene;Acc:424671]	GO:0043473	pigmentation
+ENSGALG00000016899	ENSGALG00000016899.6	dopachrome tautomerase [Source:NCBI gene;Acc:395775]	GO:0043473	pigmentation
+ENSGALG00000016899	ENSGALG00000016899.6	dopachrome tautomerase [Source:NCBI gene;Acc:395775]	GO:0048066	developmental pigmentation
+ENSGALG00000040880	ENSGALG00000040880.3	endothelin 3 [Source:NCBI gene;Acc:768509]	GO:0030318	melanocyte differentiation
+ENSGALG00000040880	ENSGALG00000040880.3	endothelin 3 [Source:NCBI gene;Acc:768509]	GO:0048070	regulation of developmental pigmentation
+ENSGALG00000009572	ENSGALG00000009572.6	ADAM metallopeptidase with thrombospondin type 1 motif 20 [Source:NCBI gene;Acc:417794]	GO:0045636	positive regulation of melanocyte differentiation
+ENSGALG00000009572	ENSGALG00000009572.6	ADAM metallopeptidase with thrombospondin type 1 motif 20 [Source:NCBI gene;Acc:417794]	GO:0048070	regulation of developmental pigmentation
+ENSGALG00000028018	ENSGALG00000028018.3	RAB38, member RAS oncogene family [Source:NCBI gene;Acc:428095]	GO:0032438	melanosome organization
+ENSGALG00000028018	ENSGALG00000028018.3	RAB38, member RAS oncogene family [Source:NCBI gene;Acc:428095]	GO:0035646	endosome to melanosome transport
+ENSGALG00000028018	ENSGALG00000028018.3	RAB38, member RAS oncogene family [Source:NCBI gene;Acc:428095]	GO:1903232	melanosome assembly
+ENSGALG00000000712	ENSGALG00000000712.6	RAB29, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9789]	GO:0032438	melanosome organization
+ENSGALG00000005660	ENSGALG00000005660.6	neurofibromin 1 [Source:NCBI gene;Acc:396085]	GO:0043473	pigmentation
+ENSGALG00000017237	ENSGALG00000017237.6	tyrosinase [Source:NCBI gene;Acc:373971]	GO:0043473	pigmentation
+ENSGALG00000038634	ENSGALG00000038634.2	KIT proto-oncogene receptor tyrosine kinase [Source:NCBI gene;Acc:378783]	GO:0030318	melanocyte differentiation
+ENSGALG00000038634	ENSGALG00000038634.2	KIT proto-oncogene receptor tyrosine kinase [Source:NCBI gene;Acc:378783]	GO:0043473	pigmentation
+ENSGALG00000038634	ENSGALG00000038634.2	KIT proto-oncogene receptor tyrosine kinase [Source:NCBI gene;Acc:378783]	GO:0048066	developmental pigmentation
+ENSGALG00000007615	ENSGALG00000007615.4	RAB11A, member RAS oncogene family [Source:NCBI gene;Acc:415544]	GO:0032402	melanosome transport
+ENSGALG00000035966	ENSGALG00000035966.2	ectodysplasin A [Source:NCBI gene;Acc:769069]	GO:0043473	pigmentation
+ENSGALG00000016600	ENSGALG00000016600.6	proopiomelanocortin [Source:NCBI gene;Acc:422011]	GO:0033059	cellular pigmentation
+ENSGALG00000044591	ENSGALG00000044591.2	olfactory receptor family 51 subfamily E member 2 [Source:HGNC Symbol;Acc:HGNC:15195]	GO:0030318	melanocyte differentiation
+ENSGALG00000028561	ENSGALG00000028561.3	seizure threshold 2 homolog (mouse) [Source:NCBI gene;Acc:424566]	GO:0043473	pigmentation
+ENSGALG00000000848	ENSGALG00000000848.6	adaptor related protein complex 1 gamma 1 subunit [Source:NCBI gene;Acc:415880]	GO:0035646	endosome to melanosome transport
+ENSGALG00000003959	ENSGALG00000003959.5	adaptor related protein complex 1 mu 1 subunit [Source:NCBI gene;Acc:420149]	GO:0032438	melanosome organization
+ENSGALG00000003959	ENSGALG00000003959.5	adaptor related protein complex 1 mu 1 subunit [Source:NCBI gene;Acc:420149]	GO:0035646	endosome to melanosome transport
+ENSGALG00000031582	ENSGALG00000031582.3	RAB1B, member RAS oncogene family [Source:NCBI gene;Acc:421273]	GO:0032402	melanosome transport
+ENSGALG00000004390	ENSGALG00000004390.5	adaptor related protein complex 3 beta 1 subunit [Source:NCBI gene;Acc:427646]	GO:0032438	melanosome organization
+ENSGALG00000004390	ENSGALG00000004390.5	adaptor related protein complex 3 beta 1 subunit [Source:NCBI gene;Acc:427646]	GO:0043473	pigmentation
+ENSGALG00000012300	ENSGALG00000012300.6	RAB32, member RAS oncogene family [Source:NCBI gene;Acc:421616]	GO:0032438	melanosome organization
+ENSGALG00000012300	ENSGALG00000012300.6	RAB32, member RAS oncogene family [Source:NCBI gene;Acc:421616]	GO:0035646	endosome to melanosome transport
+ENSGALG00000012300	ENSGALG00000012300.6	RAB32, member RAS oncogene family [Source:NCBI gene;Acc:421616]	GO:1903232	melanosome assembly
+ENSGALG00000011661	ENSGALG00000011661.5	superoxide dismutase 2, mitochondrial [Source:NCBI gene;Acc:374042]	GO:0048773	erythrophore differentiation
+ENSGALG00000003899	ENSGALG00000003899.6	RAB17, member RAS oncogene family [Source:NCBI gene;Acc:424017]	GO:0032401	establishment of melanosome localization
+ENSGALG00000003899	ENSGALG00000003899.6	RAB17, member RAS oncogene family [Source:NCBI gene;Acc:424017]	GO:0032402	melanosome transport
+ENSGALG00000055094	ENSGALG00000055094.1	CD63 molecule [Source:NCBI gene;Acc:107049249]	GO:0035646	endosome to melanosome transport
+ENSGALG00000055094	ENSGALG00000055094.1	CD63 molecule [Source:NCBI gene;Acc:107049249]	GO:0043473	pigmentation
+ENSGALG00000055094	ENSGALG00000055094.1	CD63 molecule [Source:NCBI gene;Acc:107049249]	GO:0048757	pigment granule maturation
+ENSGALG00000055094	ENSGALG00000055094.1	CD63 molecule [Source:NCBI gene;Acc:107049249]	GO:0050931	pigment cell differentiation
+ENSGALG00000003758	ENSGALG00000003758.5	melanoregulin [Source:NCBI gene;Acc:424013]	GO:0030318	melanocyte differentiation
+ENSGALG00000003758	ENSGALG00000003758.5	melanoregulin [Source:NCBI gene;Acc:424013]	GO:0032402	melanosome transport
+ENSGALG00000003758	ENSGALG00000003758.5	melanoregulin [Source:NCBI gene;Acc:424013]	GO:0032400	melanosome localization
+ENSGALG00000003758	ENSGALG00000003758.5	melanoregulin [Source:NCBI gene;Acc:424013]	GO:0043473	pigmentation
+ENSGALG00000003758	ENSGALG00000003758.5	melanoregulin [Source:NCBI gene;Acc:424013]	GO:0048066	developmental pigmentation
+ENSGALG00000004671	ENSGALG00000004671.6	ankyrin repeat domain 27 [Source:NCBI gene;Acc:415766]	GO:0035646	endosome to melanosome transport
+ENSGALG00000035156	ENSGALG00000035156.2	dynactin subunit 1 [Source:NCBI gene;Acc:426238]	GO:0032402	melanosome transport
+ENSGALG00000016740	ENSGALG00000016740.7	OCA2 melanosomal transmembrane protein [Source:NCBI gene;Acc:428009]	GO:0030318	melanocyte differentiation
+ENSGALG00000016740	ENSGALG00000016740.7	OCA2 melanosomal transmembrane protein [Source:NCBI gene;Acc:428009]	GO:0043473	pigmentation
+ENSGALG00000016740	ENSGALG00000016740.7	OCA2 melanosomal transmembrane protein [Source:NCBI gene;Acc:428009]	GO:0048066	developmental pigmentation
+ENSGALG00000020741	ENSGALG00000020741.5	HPS6, biogenesis of lysosomal organelles complex 2 subunit 3 [Source:NCBI gene;Acc:770328]	GO:0030318	melanocyte differentiation
+ENSGALG00000020741	ENSGALG00000020741.5	HPS6, biogenesis of lysosomal organelles complex 2 subunit 3 [Source:NCBI gene;Acc:770328]	GO:0043473	pigmentation
+ENSGALG00000012885	ENSGALG00000012885.7	BCL2, apoptosis regulator [Source:NCBI gene;Acc:396282]	GO:0030318	melanocyte differentiation
+ENSGALG00000012885	ENSGALG00000012885.7	BCL2, apoptosis regulator [Source:NCBI gene;Acc:396282]	GO:0043473	pigmentation
+ENSGALG00000012885	ENSGALG00000012885.7	BCL2, apoptosis regulator [Source:NCBI gene;Acc:396282]	GO:0045636	positive regulation of melanocyte differentiation
+ENSGALG00000012885	ENSGALG00000012885.7	BCL2, apoptosis regulator [Source:NCBI gene;Acc:396282]	GO:0048066	developmental pigmentation
+ENSGALG00000012885	ENSGALG00000012885.7	BCL2, apoptosis regulator [Source:NCBI gene;Acc:396282]	GO:0048070	regulation of developmental pigmentation
+ENSGALG00000012885	ENSGALG00000012885.7	BCL2, apoptosis regulator [Source:NCBI gene;Acc:396282]	GO:0048087	positive regulation of developmental pigmentation
+ENSGALG00000012885	ENSGALG00000012885.7	BCL2, apoptosis regulator [Source:NCBI gene;Acc:396282]	GO:0048753	pigment granule organization
+ENSGALG00000015025	ENSGALG00000015025.6	VANGL planar cell polarity protein 1 [Source:NCBI gene;Acc:418337]	GO:0043473	pigmentation
+ENSGALG00000003238	ENSGALG00000003238.6	G protein subunit alpha 11 [Source:NCBI gene;Acc:374077]	GO:0045634	regulation of melanocyte differentiation
+ENSGALG00000003238	ENSGALG00000003238.6	G protein subunit alpha 11 [Source:NCBI gene;Acc:374077]	GO:0048066	developmental pigmentation
