@@ -1,10 +1,25 @@
-https://www.ebi.ac.uk/gxa/home
-# pick chicken
-https://www.ebi.ac.uk/gxa/experiments?experimentType=differential&species=gallus+gallus
-# pick E-MTAB-2754-analytics.tsv
-# https://www.ebi.ac.uk/gxa/experiments-content/E-MTAB-2754/resources/DifferentialSecondaryDataFiles.RnaSeq/analytics
+# SOC2020 - Sofia Robb
 
-(base) mp181vbhv2j:E-MTAB-2754 smr$ head E-MTAB-2754-analytics.tsv
+Sequencing of new genomes has become commonplace. In this episode of SOC, Sofia Robb will discuss available open source methods for sharing genome-scale data if it is not feasible to share it through standard databases such as Ensembl. She will also demonstrate helpful ways to mine Ensembl data with Biomart and useful UNIX command line tricks for sorting, searching, and reformatting text data files.
+
+[Link to talk]() 
+
+## Hands on  Workshop: Let's LARP
+
+Live Action Role Playing
+
+You work with chickens and have completed an RNAseq experiment. You have two conditions, condition1 (g1 = 'h3.3a-/-, h3.3b-/-'), condition2 (g2 = 'wild type genotype'). You performed differential expression analysis, perhaps with cuffdiff. 
+
+__Let's get the expression data__
+[EBI Expression Atlas](https://www.ebi.ac.uk/gxa/home)
+
+1. Select [chicken](https://www.ebi.ac.uk/gxa/experiments?experimentType=differential&species=gallus+gallus)
+2. Check box to download the first experiment, ["RNA-seq of H3.3 knockout and wild type chicken DT40 cells"](https://www.ebi.ac.uk/gxa/experiments-content/E-MTAB-2754/resources/DifferentialSecondaryDataFiles.RnaSeq/analytics)
+3. Click the download link at the top of the last column.
+4. Navigate to E-MTAB-2754 directory
+5. Checkout the contents of E-MTAB-2754-analytics.tsv 
+```
+$ head E-MTAB-2754-analytics.tsv
 Gene ID	Gene Name	g1_g2.p-value	g1_g2.log2foldchange
 ENSGALG00000000003	PANX2	0.100242375805959	-0.4
 ENSGALG00000000011	C10orf88	0.0802046773105167	0.2
@@ -15,6 +30,14 @@ ENSGALG00000000055	LAMTOR3	0.529728058895927	0.1
 ENSGALG00000000059	TUBB3	0.228430079834946	-0.2
 ENSGALG00000000067	SPR	0.0560358954256604	-0.4
 ENSGALG00000000071		0.878861305389193	0
+```
+
+
+__Now, you want to get rid of any differential expression data points that have a p-value > 0.001.__
+
+What will you have to do with your tsv file? 
+1. [Sort it by p-value](sort_pvalue.md)
+
 
 cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -t$'\t' -k3 -g > sorted_by_p.tsv
 # open file remove any lines that are larger that 0.001
