@@ -1,4 +1,4 @@
-# BioMart to get gene info 
+# Use BioMart to get gene info 
 
 Retieve the gene ID, gene name, gene description, and interporscan ID, short description, and description for every chicken gene.
 
@@ -11,9 +11,9 @@ Retieve the gene ID, gene name, gene description, and interporscan ID, short des
   a. Click "Attibutes" 
   b. Expand "GENE:"  
   c. Deselect 
-  	i. "Gene stable ID"  
-	ii. "Transcript stable ID"  
-  	iii. "Transcript stable ID verion" 
+      i. "Gene stable ID"  
+      ii. "Transcript stable ID"  
+      iii. "Transcript stable ID verion" 
   d. Should only have "Gene Stable ID version" selected
 6. Add Attributes:  
 	i. Select "Gene description"
