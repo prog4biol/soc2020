@@ -30,5 +30,5 @@ Retieve the gene ID, gene name, gene description, and interporscan ID, short des
   c. We want to download TSV to a file, which is default, so Click the "GO" button.  
   d. Wait, Download called "mart_export.txt" will be in your downloads location.  
   e. Copy mart_export.txt to the location with your expression data.   
-    i. for me, will likely be different for you: `mv ~/Downloads/mart_export.txt ~/Desktop/soc2020/.` 
+      i. for me, will likely be different for you: `mv ~/Downloads/mart_export.txt ~/Desktop/soc2020/.` 
 
