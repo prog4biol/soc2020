@@ -62,13 +62,14 @@ Where do we start?
 ### Find out more about our up- and down-regulated genes.
 
 __Now what are these genes?__  
-We are going to mine gene info data from Ensembl BioMart. BioMart is a SUPER handy tool (if your organism is in Ensembl). Ensembl has 6 different sites for different groups of organisms. 
+We are going to mine gene info data from Ensembl BioMart. BioMart is a SUPER handy tool (if your organism is in Ensembl).  
 
-[Ensembl](http://www.ensembl.org/) (veterbrates)
-[Ensembl Plants](http://plants.ensembl.org/)
-[Ensembl Fungi](http://fungi.ensembl.org/)
-[Ensembl Bacteria](http://bacteria.ensembl.org/)
-[Ensembl Metazoa](http://metazoa.ensembl.org/)
+Ensembl has 6 different sites for different groups of organisms:  
+[Ensembl](http://www.ensembl.org/) (veterbrates)  
+[Ensembl Plants](http://plants.ensembl.org/)  
+[Ensembl Fungi](http://fungi.ensembl.org/)  
+[Ensembl Bacteria](http://bacteria.ensembl.org/)  
+[Ensembl Metazoa](http://metazoa.ensembl.org/)  
 
 Let's find out more about chicken genes using Ensembl's BioMart tool:
 1. Retrieve the gene ID, gene name, gene description, and interporscan ID, short description, and description for every chicken gene. [Need Help?](biomart_get_gene_info/README.sh)
