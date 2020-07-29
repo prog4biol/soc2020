@@ -1,4 +1,4 @@
-# Use BioMart to get gene info 
+# Use BioMart to Get Gene Info 
 
 Retieve the gene ID, gene name, gene description, and interporscan ID, short description, and description for every chicken gene.
 
