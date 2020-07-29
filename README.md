@@ -40,7 +40,7 @@ ENSGALG00000000071		0.878861305389193	0
 ```
 
 
-### Create a list of up- and down-regulated genes
+### Create lists of up- and down-regulated genes
 __What is it that people want to do usually with differential expression data?__  
 __They usually want to find the top up regulated genes and the top down regulated genes.__  
 
