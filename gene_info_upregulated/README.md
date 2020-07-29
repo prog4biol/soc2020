@@ -1,11 +1,13 @@
-# Gene info for upregulated genes
+# Parse Gene info for upregulated genes from our BioMart download for all Chicken Genes
 
-Get just the IDs to use with `grep`
+
+## get gene info for significantly upregulated genes
+Get just the IDs to use with `grep`:
 ```
 $ cut -f 1 up2.tsv > up2ids.txt
 ```
 
-Use grep to pull out the genes that >= 2 log2foldchage from the the complete gene info file.
+Use `grep` to pull out the genes that >= 2 log2foldchage (up2ids.txt) from the the complete gene info file (mart_export.txt):
 ```
 $ grep -f up2ids.txt mart_export.txt | head
 ENSGALG00000006388.7	interleukin 16 [Source:NCBI gene;Acc:374270]	IL16	IPR001478	PDZ	PDZ domain
@@ -20,9 +22,17 @@ ENSGALG00000014730.7	ELOVL fatty acid elongase 7 [Source:NCBI gene;Acc:431579]	E
 ENSGALG00000014730.7	ELOVL fatty acid elongase 7 [Source:NCBI gene;Acc:431579]	ELOVL7	IPR030457	ELO_CS	ELO family, conserved site
 ```
 
-You can do the same with the down-regulated genes.
+## get gene info for significantly downregulated genes
+
+You can do the same with the down-regulated genes:
+
+Get just the IDs to use with `grep`:
 ```
 $ cut -f 1 dn-2.tsv > dn-2ids.txt
+```
+
+Use `grep` to pull out the genes that <= -2 log2foldchage (dn-2ids.txt) from the the complete gene info file (mart_export.txt):
+```
 $ grep -f dn-2ids.txt mart_export.txt | head
 ENSGALG00000016736.6	cytoplasmic FMR1 interacting protein 1 [Source:NCBI gene;Acc:418677]	CYFIP1	IPR008081	Cytoplasmic_FMR1-int	Cytoplasmic FMR1-interacting
 ENSGALG00000016736.6	cytoplasmic FMR1 interacting protein 1 [Source:NCBI gene;Acc:418677]	CYFIP1	IPR009828	DUF1394	Protein of unknown function DUF1394
@@ -35,3 +45,5 @@ ENSGALG00000039826.2	cyclic nucleotide gated channel alpha 3 [Source:NCBI gene;A
 ENSGALG00000039826.2	cyclic nucleotide gated channel alpha 3 [Source:NCBI gene;Acc:396144]	CNGA3	IPR014710	RmlC-like_jellyroll	RmlC-like jelly roll fold
 ENSGALG00000039826.2	cyclic nucleotide gated channel alpha 3 [Source:NCBI gene;Acc:396144]	CNGA3	IPR018488	cNMP-bd_CS	Cyclic nucleotide-binding, conserved site
 ```
+
+

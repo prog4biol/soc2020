@@ -8,16 +8,23 @@ Sequencing of new genomes has become commonplace. In this episode of SOC, Sofia 
 
 Live Action Role Playing
 
-You work with chickens and have completed an RNAseq experiment. You have two conditions, condition1 (g1 = 'h3.3a-/-, h3.3b-/-'), condition2 (g2 = 'wild type genotype'). You performed differential expression analysis, perhaps with cuffdiff. 
+You work with chickens and have completed an RNAseq experiment. You have two conditions, 
+  - condition 1:  g1 = 'h3.3a-/-, h3.3b-/-' 
+  - condition 2:  g2 = 'wild type genotype' 
 
-__Let's get the expression data__
-[EBI Expression Atlas](https://www.ebi.ac.uk/gxa/home)
+You performed differential expression analysis, perhaps with cuffdiff. 
 
-1. Select [chicken](https://www.ebi.ac.uk/gxa/experiments?experimentType=differential&species=gallus+gallus)
-2. Check box to download the first experiment, ["RNA-seq of H3.3 knockout and wild type chicken DT40 cells"](https://www.ebi.ac.uk/gxa/experiments-content/E-MTAB-2754/resources/DifferentialSecondaryDataFiles.RnaSeq/analytics)
-3. Click the download link at the top of the last column.
-4. Navigate to E-MTAB-2754 directory
-5. Checkout the contents of E-MTAB-2754-analytics.tsv 
+### Get expression data 
+__Let's get the expression data from Ensembl__  
+
+1. Go to [EBI Expression Atlas](https://www.ebi.ac.uk/gxa/home)
+2. Select [chicken](https://www.ebi.ac.uk/gxa/experiments?experimentType=differential&species=gallus+gallus)
+3. Check box to download the first experiment, ["RNA-seq of H3.3 knockout and wild type chicken DT40 cells"](https://www.ebi.ac.uk/gxa/experiments-content/E-MTAB-2754/resources/DifferentialSecondaryDataFiles.RnaSeq/analytics)
+4. Click the download link at the top of the last column.
+5. Navigate to E-MTAB-2754 directory
+6. Checkout the contents of E-MTAB-2754-analytics.tsv 
+
+Contents of E-MTAB-2754-analytics.tsv:
 ```
 $ head E-MTAB-2754-analytics.tsv
 Gene ID	Gene Name	g1_g2.p-value	g1_g2.log2foldchange
@@ -32,14 +39,17 @@ ENSGALG00000000067	SPR	0.0560358954256604	-0.4
 ENSGALG00000000071		0.878861305389193	0
 ```
 
+
+### Create a list of up- and down-regulated genes
 __What is it that people want to do usually with differential expression data?__  
-They usually want to find the top up regulated genes and the top down regulated genes.
+__They usually want to find the top up regulated genes and the top down regulated genes.__  
 
 Let's do it!!
 
 Where do we start?
+
 1. We want to make sure we are only looking at data points that are statically signifant, p-value > 0.001.  
-  a. [Sort file by p-value](sort_by_pvalue/README.md)  
+  a. [Sort expression file by p-value](sort_by_pvalue/README.md)  
   b. [Keep only the lines that have a p-value > 0.001](significant_only/README.md).  
 
 2. Now let's find our most up- and down- regulated genes. Which means we need to sort the log2foldchage column (4th column)  
@@ -49,22 +59,26 @@ Where do we start?
  d. [Do it a different way](sort_log2fold/README.md#other-way-to-do-the-same)   
 
 
-__Now what are these genes?__  
-Here is where we are going to mine data from Ensembl biomart. Biomart is a SUPER handy tool if your organims is in Ensembl. Ensembl has 5 different sites for different groups of organisms. 
+### Find out more about our up- and down-regulated genes.
 
-Ensembl (veterbrates)
-Ensembl Plant
-Ensembl Fungi
-Ensembl Bacteria
-Ensembl Metazoa
+__Now what are these genes?__
+We are going to mine gene info data from Ensembl BioMart. BioMart is a SUPER handy tool (if your organism is in Ensembl). Ensembl has 6 different sites for different groups of organisms. 
 
-Let's find out more about chicken genes using Ensembl's BioMart tool
+[Ensembl](http://www.ensembl.org/) (veterbrates)
+[Ensembl Plants](http://plants.ensembl.org/)
+[Ensembl Fungi](http://fungi.ensembl.org/)
+[Ensembl Bacteria](http://bacteria.ensembl.org/)
+[Ensembl Metazoa](http://metazoa.ensembl.org/)
 
-1. Retieve the gene ID, gene name, gene description, and interporscan ID, short description, and description for every chicken gene. [Need Help?](biomart_get_gene_info/README.sh)
-2. [Pull out gene information about out upregulated genes.](gene_info_upregulated/README.md)
+Let's find out more about chicken genes using Ensembl's BioMart tool:
+1. Retrieve the gene ID, gene name, gene description, and interporscan ID, short description, and description for every chicken gene. [Need Help?](biomart_get_gene_info/README.sh)
+2. [Find the gene information about out upregulated genes.](gene_info_upregulated/README.md)
+3. [Find the gene information about out downregulated genes.](gene_info_upregulated/README.md)
 
 
+### Searching for Genes with GO terms
 __Are any involved in a process I am super interested in?__  
+
 Of our most signficant up- and down-regualted genes, are any involved in stem cell proliferation (GO:0072089) or pigmenation (GO:0043473)?
 
 1. Get a list of genes involved in stem cell proliferation (GO:0072089). [Need Help](biomart_get_gene_and_go_info/README.sh)
