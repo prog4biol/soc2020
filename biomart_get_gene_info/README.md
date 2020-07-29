@@ -11,9 +11,9 @@ Retieve the gene ID, gene name, gene description, and interporscan ID, short des
    a. Click "Attibutes" 
    b. Expand "GENE:"  
    c. Deselect 
-      i. "Gene stable ID"  
-      ii. "Transcript stable ID"  
-      iii. "Transcript stable ID verion" 
+      *  "Gene stable ID"  
+      * "Transcript stable ID"  
+      * "Transcript stable ID verion" 
    d. Should only have "Gene Stable ID version" selected
 6. Add Attributes:  
    a. Select "Gene description"  
@@ -30,5 +30,5 @@ Retieve the gene ID, gene name, gene description, and interporscan ID, short des
    c. We want to download TSV to a file, which is default, so Click the "GO" button.  
    d. Wait, Download called "mart_export.txt" will be in your downloads location.  
    e. Copy mart_export.txt to the location with your expression data.   
-      i. for me, will likely be different for you: `mv ~/Downloads/mart_export.txt ~/Desktop/soc2020/.` 
+      * for me, will likely be different for you: `mv ~/Downloads/mart_export.txt ~/Desktop/soc2020/.` 
 
