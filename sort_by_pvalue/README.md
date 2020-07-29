@@ -1,6 +1,6 @@
 # Sort file by p-value
 
-
+OK. Let's sort our expression file using `sort`:
 ```
 $ sort E-MTAB-2754-analytics.tsv | head
 ENSGALG00000000003	PANX2	0.100242375805959	-0.4
@@ -14,11 +14,14 @@ ENSGALG00000000067	SPR	0.0560358954256604	-0.4
 ENSGALG00000000071		0.878861305389193	0
 ENSGALG00000000081	IL4I1	NA	0
 ```
- - This isn't right. `sort` is sorting by the first column, lets switch to sort by the 3rd column (p-value). 
- - And, look, we have 'NA' in the p-value column. 
- - Is there any other unexpected values in p-value column?
+ - This isn't right. `sort` is sorting by the first column  
+	- let's fix this by indicating we want to sort by the 3rd column (p-value) 
+ - And, look, we have 'NA' in the 3rd coulumn (p-value column) 
+ - Is there any other unexpected values in p-value column?  
+  
 
 
+Review the file using `more` to check out the file for unexpected values:  
 ```
 $ more E-MTAB-2754-analytics.tsv
 Gene ID Gene Name       g1_g2.p-value   g1_g2.log2foldchange
@@ -70,9 +73,11 @@ ENSGALG00000000209      PRNP    3.07006995025324e-18    0.8
 ENSGALG00000000215      DCP2    0.000936131627143128    -0.4
 ENSGALG00000000217      PPFIA4  0.676718383163428       0.1
 ```
-Right away, I see we have scientific notation. Let's keep that in mind.
+  - Right away, I see we have scientific notation.   
+  - Also I notice we have some missing entries in the 2nd column.  
+  - Let's keep these points in mind.
 
-Let's sort by the third column.
+Let's sort by the third column (p-value):
 ```
 $ sort -k3 E-MTAB-2754-analytics.tsv | head
 ENSGALG00000000295		0.807343900207163	-0.1
@@ -87,9 +92,13 @@ ENSGALG00000001701		0.814909576526554	-0.1
 ENSGALG00000001720		0.363542657094163	-0.1
 ```
 
-Hmm. This doesn't look right either. Looks like we are sorting by the 4th column, the log2foldchange column. Why?? I notice it looks like we only have 3 columns. Let's indicate that we have tab characters as a column separator.
+ - Hmm. This doesn't look right either.  
+ - Looks like we are sorting by the 4th column, the log2foldchange column.  
+ - Why?? Maybe it has something to do with missing entries in the 2nd column, making only 3 columns in some areas of the file.  
+ - Let's indicate that we have tab characters as a column separator.
 
 
+Use `sort` and specify our column separator character:  
 ```
 $ sort -t$'\t' -k3 E-MTAB-2754-analytics.tsv | head
 ENSGALG00000002286	H3F3B	0	-7
@@ -103,9 +112,12 @@ ENSGALG00000026757	DHFR	0.0001017195368379	-0.4
 ENSGALG00000028501	DCK	0.000101840426398403	-0.3
 ENSGALG00000003580	MMP2	0.000102357608503999	0.4
 ```
-OK. That looks better, the 3rd column looks like it is being sorted, but wait, we had p-values with scientific notation (3.43933719323364e-09). Shouldn't they come first? Are we sorting by characters or by numbers? Characters! We should be sorting by numerical values!!
+  - OK. That looks better, the 3rd column looks like it is being sorted.  
+  - Wait, we had p-values with scientific notation (3.43933719323364e-09). Shouldn't they come first?   
+  - Are we sorting by characters or by numbers? Characters! We should be sorting by numerical values!!
 
 
+Use `sort` and specify we want to sort the column 3 numerically:  
 ```
 $ sort -n -t$'\t' -k3 E-MTAB-2754-analytics.tsv | head
 ENSGALG00000000038	CTRB2	NA	0.2
@@ -119,8 +131,10 @@ ENSGALG00000000136	BLEC2	NA	0
 ENSGALG00000000151	ADAMTS19	NA	0
 ENSGALG00000000162	DMB1	NA	0
 ```
-Wait, What? Now we have 'NA' sorted to the top. What about the other end of our list, let's reverse the sort.
+  - Wait, What? Now we have 'NA' sorted to the top. 
+  - What about the other end of our list, let's reverse the sort.
 
+Reverse sort to take a quick look at the other end of our sorted file: 
 ```
 $ sort -r -n -t$'\t' -k3 E-MTAB-2754-analytics.tsv | head
 ENSGALG00000041634	ACTG2	9.99765161055154e-06	0.5
@@ -134,8 +148,10 @@ ENSGALG00000009112	LRRC57	9.88331240104096e-08	0.6
 ENSGALG00000015446	POU2F1	9.8793969295065e-06	-0.5
 ENSGALG00000016279	RAB23	9.86441714514607e-05	-0.6
 ```
-Huh. Looks a bit better, but they are sorting by the digits and not the appropirate scientific notation. We need to sort by the actual vvalue
+ - Huh. Looks a bit better, but they are sorting by the digits and not the appropirate scientific notation?  
+ - We need to sort by the actual value and not just the starting digits.
 
+Use `sort` with -g option (general-numeric-sort):    
 ```
 $ sort -g -t$'\t' -k3 E-MTAB-2754-analytics.tsv | head
 ENSGALG00000000038	CTRB2	NA	0.2
@@ -149,10 +165,11 @@ ENSGALG00000000136	BLEC2	NA	0
 ENSGALG00000000151	ADAMTS19	NA	0
 ENSGALG00000000162	DMB1	NA	0
 ```
+ - Alright, well, not sure if it worked because we have these 'NA' values.  
+ - Let's check out the other end of the file
 
-Let's check out the other end of the file, we have 'NA' here at the top of our list
 
-
+Use a reverse sort or do a tail of your orginal sort to check out the other end of the sorted file:  
 ```
 $ sort -r -g -t$'\t' -k3 E-MTAB-2754-analytics.tsv | head
 ENSGALG00000035699	MARCHF6	0.999851391175025	0
@@ -166,10 +183,11 @@ ENSGALG00000040018	NUP98	0.998960114063576	0
 ENSGALG00000051668		0.998808098961675	0
 ENSGALG00000048351		0.998647215307104	0```
 ```
-OK. This looks good so far. Let's get rid of the 'NA' values then check out the top and bottom of our sorts
+  - OK. This looks good so far. Let's get rid of the 'NA' values then check out the top and bottom of our sort
+  - if you still have issues with your system's sort check out this [post](https://stackoverflow.com/questions/10311624/sorting-floats-with-exponents-with-sort-g-bash-command)
 
 
-
+Use `grep -v` to remove lines that match a pattern: 
 ```
 $ cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -g -t$'\t' -k3 | head
 Gene ID	Gene Name	g1_g2.p-value	g1_g2.log2foldchange
@@ -183,8 +201,10 @@ ENSGALG00000023279	EPN3	3.12236315199182e-170	-2.9
 ENSGALG00000011551	JCHAIN	6.47982639371527e-144	-1.7
 ENSGALG00000002911	MOXD1	1.29318024850042e-142	-2.4
 ```
-Looks better. Scientific values look appropriately sorted. What about the other end of the list
+ - Looks better. Scientific values look appropriately sorted.  
+ -  What about the other end of the list?
 
+Review other end of the sorted file using a reverse sort or tail of the orginal sort:  
 ```
 $ cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -r -g -t$'\t' -k3 | head
 ENSGALG00000035699	MARCHF6	0.999851391175025	0
@@ -198,17 +218,15 @@ ENSGALG00000040018	NUP98	0.998960114063576	0
 ENSGALG00000051668		0.998808098961675	0
 ENSGALG00000048351		0.998647215307104	0
 ```
+  - OK!! I think we got our p-value sort!!
 
-OK!! I think we got our p-value sort!!
 
-Let's keep this file
-
+Let's keep this file:
 ```
 $ cat E-MTAB-2754-analytics.tsv | grep -v -e "\tNA\t" | sort -g -t$'\t' -k3 > pvalue_sorted.tsv
 ```
 
 Let's double check the new file.
-
 Does the top look okay?
 ```
 $ head pvalue_sorted.tsv
@@ -223,7 +241,7 @@ ENSGALG00000023279	EPN3	3.12236315199182e-170	-2.9
 ENSGALG00000011551	JCHAIN	6.47982639371527e-144	-1.7
 ENSGALG00000002911	MOXD1	1.29318024850042e-142	-2.4
 ```
-GOOD!!
+ - GOOD!!
 
 How about the bottom?
 ```
@@ -239,4 +257,4 @@ ENSGALG00000018264	gga-let-7d	0.999535070448575	0
 ENSGALG00000021365	DCTN3	0.999719667557785	0
 ENSGALG00000035699	MARCHF6	0.999851391175025	0
 ```
-GOOD!!
+ - GOOD!!
