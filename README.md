@@ -19,7 +19,7 @@ __Let's get the expression data from Ensembl__
 
 1. Go to [EBI Expression Atlas](https://www.ebi.ac.uk/gxa/home)
 2. Select [chicken](https://www.ebi.ac.uk/gxa/experiments?experimentType=differential&species=gallus+gallus)
-3. Check box to download the first experiment, ["RNA-seq of H3.3 knockout and wild type chicken DT40 cells"](https://www.ebi.ac.uk/gxa/experiments-content/E-MTAB-2754/resources/DifferentialSecondaryDataFiles.RnaSeq/analytics)
+3. Check box to download the first experiment, "RNA-seq of H3.3 knockout and wild type chicken DT40 cells". If you get lost, directly download [here](https://www.ebi.ac.uk/gxa/experiments-content/E-MTAB-2754/resources/DifferentialSecondaryDataFiles.RnaSeq/analytics)
 4. Click the download link at the top of the last column.
 5. Navigate to E-MTAB-2754 directory
 6. Checkout the contents of E-MTAB-2754-analytics.tsv 
