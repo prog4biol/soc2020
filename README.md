@@ -62,7 +62,7 @@ Where do we start?
 ### Find out more about our up- and down-regulated genes.
 
 __Now what are these genes?__  
-We are going to mine gene info data from Ensembl BioMart. BioMart is a SUPER handy tool (if your organism is in Ensembl).  
+We are going to mine gene info data from Ensembl [BioMart](http://www.ensembl.org/biomart/martview). BioMart is a SUPER handy tool (if your organism is in Ensembl).  
 
 Ensembl has 6 different sites for different groups of organisms:  
 [Ensembl](http://www.ensembl.org/) (veterbrates)  
@@ -71,8 +71,8 @@ Ensembl has 6 different sites for different groups of organisms:
 [Ensembl Bacteria](http://bacteria.ensembl.org/)  
 [Ensembl Metazoa](http://metazoa.ensembl.org/)  
 
-Let's find out more about chicken genes using Ensembl's BioMart tool:
-1. Retrieve the gene ID, gene name, gene description, and interporscan ID, short description, and description for every chicken gene. [Need Help?](biomart_get_gene_info/README.sh)
+Let's find out more about chicken genes using Ensembl's [BioMart](http://www.ensembl.org/biomart/martview) tool:
+1. Retrieve the gene ID, gene name, gene description, and interporscan ID, short description, and description for every chicken gene. [Need Help?](biomart_get_gene_info/README.md)
 2. [Find the gene information about out upregulated genes.](gene_info_upregulated/README.md)
 3. [Find the gene information about out downregulated genes.](gene_info_upregulated/README.md)
 
@@ -82,6 +82,6 @@ __Are any involved in a process I am super interested in?__
 
 Of our most signficant up- and down-regualted genes, are any involved in stem cell proliferation (GO:0072089) or pigmenation (GO:0043473)?
 
-1. Get a list of genes involved in stem cell proliferation (GO:0072089). [Need Help](biomart_get_gene_and_go_info/README.sh)
-2. Are any of our up-regulated also in our list of genes involved in stem cell proliferation?  [Need Help](biomart_get_gene_and_go_info/README.sh#upregulated_and_stem_cell_proliferation)
+1. Get a list of genes involved in stem cell proliferation (GO:0072089). [Need Help?](biomart_get_gene_and_go_info/README.md)
+2. Are any of our up-regulated also in our list of genes involved in stem cell proliferation?  [Need Help?](biomart_get_gene_and_go_info/README.sh#upregulated_and_stem_cell_proliferation)
 
