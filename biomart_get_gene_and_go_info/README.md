@@ -27,15 +27,25 @@ Let's go back to ensembl. Hopefully you have your gene info download still open.
 Do the same for pigmentation --> GO:0043473 
 
 
-## upregulated and stem cell proliferation
+##  stem cell proliferation
+Are any of our up- or down-regulated genes involved in stem cell prolifereation?
 
+Use `grep` to find up and down regulated genes in our proliferation mart export (proliferation_mart_export.txt):
 ```
 $ grep -f up2ids.txt  proliferation_mart_export.txt
 ENSGALG00000040493	ENSGALG00000040493.2	pleiotrophin [Source:NCBI gene;Acc:418125]	GO:0007406	negative regulation of neuroblast proliferation
 
 $ grep -f dn-2ids.txt  proliferation_mart_export.txt
 ENSGALG00000039861	ENSGALG00000039861.2	plexin B2 [Source:NCBI gene;Acc:425938]	GO:0007405	neuroblast proliferation
+```
 
+
+
+## pigmentation 
+Are any of our up- or down-regulated genes involved in pigmentation?
+
+Use `grep` to find up and down regulated genes in our pigmentation mart export (pigmentation_mart_export.txt):
+```
 $ grep -f up2ids.txt  pigmentation_mart_export.txt
 
 $ grep -f dn-2ids.txt  pigmentation_mart_export.txt
@@ -44,3 +54,5 @@ ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [So
 ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [Source:NCBI gene;Acc:424306]	GO:1903056	regulation of melanosome organization
 ```
 
+
+Yes!! Success!!! We do have some up- and down-regulated genes are annotated as being involved in our two favorite processes! 
