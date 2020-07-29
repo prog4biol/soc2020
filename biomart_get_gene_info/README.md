@@ -26,9 +26,9 @@ Retieve the gene ID, gene name, gene description, and interporscan ID, short des
   e. Select "Interpro Decription" 
 8. Retrieve results  
   a. Click the "Results" button near the top left.
-  b. Check Unique results only once results appear
+  b. Check Unique results only once results appear.  
   c. We want to download TSV to a file, which is default, so Click the "GO" button.  
-  d. Wait, Download called "mart_export.txt" will be in your downloads location.
-  e. Copy mart_export.txt to the location with your expression data. 
-	i. for me, will likely be different for you: `mv ~/Downloads/mart_export.txt ~/Desktop/soc2020/.` 
+  d. Wait, Download called "mart_export.txt" will be in your downloads location.  
+  e. Copy mart_export.txt to the location with your expression data.   
+      i. for me, will likely be different for you: `mv ~/Downloads/mart_export.txt ~/Desktop/soc2020/.` 
 
