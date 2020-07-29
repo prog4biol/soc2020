@@ -61,7 +61,7 @@ Where do we start?
 
 ### Find out more about our up- and down-regulated genes.
 
-__Now what are these genes?__
+__Now what are these genes?__  
 We are going to mine gene info data from Ensembl BioMart. BioMart is a SUPER handy tool (if your organism is in Ensembl). Ensembl has 6 different sites for different groups of organisms. 
 
 [Ensembl](http://www.ensembl.org/) (veterbrates)
