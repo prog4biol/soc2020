@@ -1,5 +1,7 @@
 # Keep only significant data points (pvalue < 0.001)
 
+
+Review our expression file that we sorted by pvalue (pvalue_sorted.tsv) and determine which line contains the last signifcant pvalue:
 ```
 $ more pvalue_sorted.tsv
 ...
@@ -12,9 +14,12 @@ ENSGALG00000021193      STARD5  0.00102902792258132     0.4
 ENSGALG00000052519              0.00102902792258132     0.5
 ENSGALG00000016946      SUGT1   0.00103327849979457     -0.3
 ```
+  - ENSGALG00000012082 is the last line we want to keep.  
+  - Let's get rid of the rest. 
+  - Let's find out the line number of this line
 
-ENSGALG00000012082 is the last line we want to keep. Let's get rid of the rest. Let's find out the line number of this line
 
+Use `cat` with the line number option to find the last line we want to keep:  
 ```
 $ cat -n pvalue_sorted.tsv |  more
   2203  ENSGALG00000007519      ACBD5   0.000991466118048178    -0.4
@@ -27,16 +32,16 @@ $ cat -n pvalue_sorted.tsv |  more
   2210  ENSGALG00000016946      SUGT1   0.00103327849979457     -0.3
   2211  ENSGALG00000009915      EML4    0.00104024036341589     0.6
 ```
-Line 2206!!
+  - Line 2206!!  
 
-Or we could use grep 
+We could use `grep` with the line number to do the same:   
 ```
 $ grep -n -e "ENSGALG00000012082\tFAIM\t0.000998446529828946\t-0.4" pvalue_sorted.tsv
 2206:ENSGALG00000012082	FAIM	0.000998446529828946	-0.4
 ```
-Line 2206!!
+  - Line 2206!!  
 
-Now let's keep only the first 2,206 lines.
+Now let's keep only the first 2,206 lines:
 ```
 $ head -n 2206 pvalue_sorted.tsv  | tail
 ENSGALG00000016687	P2RY8	0.000951053681334641	0.3
@@ -50,12 +55,15 @@ ENSGALG00000008934	PIK3CA	0.000992738392868489	-0.3
 ENSGALG00000050376		0.000994824004256688	-1.1
 ENSGALG00000012082	FAIM	0.000998446529828946	-0.4
 ```
-Great, the last line is the one we want. Let's create a new file.
+  - Great, the last line is the one we want.  
+  - Let's create a new file.
 
+Create a new file with the first 2,206 lines of our expression data sorted by pvalue (pvalue_sorted.tsv):  
 ```
 $ head -n 2206 pvalue_sorted.tsv > pvalue_sorted_significant_only.tsv
 ```
-Check it to make sure it looks right.
+
+Check it to make sure it looks right.  
 
 Check the top:
 ```
@@ -88,4 +96,4 @@ ENSGALG00000012082	FAIM	0.000998446529828946	-0.4
 
 ```
 
-Looks great! We have only our signficant data points sorted by pvalue.
+Looks great! We have only our signficant data points sorted by pvalue (smalled to largest).
