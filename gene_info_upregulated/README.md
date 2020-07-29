@@ -1,11 +1,30 @@
-# Parse Gene info for upregulated genes from our BioMart download for all Chicken Genes
+# Get Gene info for our upregulated genes
+
+We will parse the gene info for the upregulated genes from the BioMart download of info for all Chicken Genes.
 
 
 ## get gene info for significantly upregulated genes
-Get just the IDs to use with `grep`:
+Get just the IDs from our upregulated genes (up2.tsv) to use with `grep`:
 ```
 $ cut -f 1 up2.tsv > up2ids.txt
 ```
+
+Review the file:
+```
+$ head up2ids.txt
+ENSGALG00000026591
+ENSGALG00000006456
+ENSGALG00000053328
+ENSGALG00000016602
+ENSGALG00000002118
+ENSGALG00000033941
+ENSGALG00000048302
+ENSGALG00000030602
+ENSGALG00000007416
+ENSGALG00000047182
+```
+ - Just IDs!
+
 
 Use `grep` to pull out the genes that >= 2 log2foldchage (up2ids.txt) from the the complete gene info file (mart_export.txt):
 ```
