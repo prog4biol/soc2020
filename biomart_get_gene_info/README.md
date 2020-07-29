@@ -8,7 +8,7 @@ Retieve the gene ID, gene name, gene description, and interporscan ID, short des
 3. Choose Database --> Ensembl Genes 100 (this is the current version)  
 4. Choose Dataset --> Chicken genes (GRCg6a)  
 5. Change Attributes:  
-   a. Click "Attibutes" 
+   a. Click "Attibutes"   
    b. Expand "GENE:"  
    c. Deselect 
       *  "Gene stable ID"  
