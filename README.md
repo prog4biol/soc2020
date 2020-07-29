@@ -39,14 +39,14 @@ Let's do it!!
 
 Where do we start?
 1. We want to make sure we are only looking at data points that are statically signifant, p-value > 0.001.  
-  a. [Sort file by p-value](1_sort_by_pvalue/README.md)  
-  b. [Keep only the lines that have a p-value > 0.001](2_significant_only/README.md).  
+  a. [Sort file by p-value](sort_by_pvalue/README.md)  
+  b. [Keep only the lines that have a p-value > 0.001](significant_only/README.md).  
 
 2. Now let's find our most up- and down- regulated genes. Which means we need to sort the log2foldchage column (4th column)  
- a. [Sort file by log2foldchange](3_sort_log2fold/README.md)  
- b. [Get the top 100 up/down-regulated genes](3_sort_log2fold/README.md#get-the-extremes)   
- c. [Get a list of all the genes with the most signifant changes](#most-signficant-changes)   
- d. [Do it a different way](3_sort_log2fold/README.md#other-way-to-do-the-same)   
+ a. [Sort file by log2foldchange](sort_log2fold/README.md)  
+ b. [Get the top 100 up/down-regulated genes](sort_log2fold/README.md#get-the-extremes)   
+ c. [Get a list of all the genes with the most signifant changes](sort_log2fold/README.md#most-signficant-changes)   
+ d. [Do it a different way](sort_log2fold/README.md#other-way-to-do-the-same)   
 
 
 __Now what are these genes?__  
@@ -60,96 +60,13 @@ Ensembl Metazoa
 
 Let's find out more about chicken genes using Ensembl's BioMart tool
 
-PUT STEP BY STEP IN NEW README
+1. Retieve the gene ID, gene name, gene description, and interporscan ID, short description, and description for every chicken gene. [Need Help?](biomart_get_gene_info/README.sh)
+2. [Pull out gene information about out upregulated genes.](gene_info_upregulated/README.md)
 
-Let's get gene info.
-I want to get the gene ID, name, description, and IPRSCAN domain info for every chicken gene. Here is how you do this with BioMart.
-
-
-1. Go to [Ensembl](http://www.ensembl.org)  
-2. Click link to [BioMart](http://www.ensembl.org/biomart/martview)  
-3. Choose Database --> Ensembl Genes 100 (this is the current version)  
-4. Choose Dataset --> Chicken genes (GRCg6a)  
-5. Change Attributes:  
-  a. Click "Attibutes" 
-  b. Expand "GENE:"  
-  c. Deselect 
-  	i. "Gene stable ID"  
-	ii. "Transcript stable ID"  
-  	iii. "Transcript stable ID verion" 
-  d. Should only have "Gene Stable ID version" selected
-6. Add Attributes:  
-	i. Select "Gene description"
-	ii. Select "Gene name"
-7. Add Additonal Attributes:  
-  a. Scroll Down. 
-  b. Expand "PROTEIN DOMAINS AND FAMILIES:"  
-  c. Select "Interpro ID"  
-  d. Select "Interpro Short Description"  
-  e. Select "Interpro Decription" 
-8. Retrieve results  
-  a. Click the "Results" button near the top left.
-  b. Check Unique results only once results appear
-  c. We want to download TSV to a file, which is default, so Click the "GO" button.  
-  d. Wait, Download called "mart_export.txt" will be in your downloads location.
-  e. Copy mart_export.txt to the location with your expression data. 
-	i. for me, will likely be different for you: `mv ~/Downloads/mart_export.txt ~/Desktop/soc2020/.` 
-
-Review information about my upregulated genes.
-
-PUT STEP BY STEP IN NEW README
-
-Get just the IDs to use with `grep`
-```
-$ cut -f 1 up2.tsv > up2ids.txt
-```
-
-Use grep to pull out the genes that >= 2 log2foldchage from the the complete gene info file.
-```
-$ grep -f up2ids.txt mart_export.txt | head
-ENSGALG00000006388.7	interleukin 16 [Source:NCBI gene;Acc:374270]	IL16	IPR001478	PDZ	PDZ domain
-ENSGALG00000006388.7	interleukin 16 [Source:NCBI gene;Acc:374270]	IL16	IPR020450	IL-16	Interleukin-16
-ENSGALG00000006388.7	interleukin 16 [Source:NCBI gene;Acc:374270]	IL16	IPR036034	PDZ_sf	PDZ superfamily
-ENSGALG00000010770.7	scinderin [Source:NCBI gene;Acc:420588]	SCIN	IPR007122	Villin/Gelsolin	Villin/Gelsolin
-ENSGALG00000010770.7	scinderin [Source:NCBI gene;Acc:420588]	SCIN	IPR007123	Gelsolin-like_dom	Gelsolin-like domain
-ENSGALG00000010770.7	scinderin [Source:NCBI gene;Acc:420588]	SCIN	IPR029006	ADF-H/Gelsolin-like_dom_sf	ADF-H/Gelsolin-like domain superfamily
-ENSGALG00000010770.7	scinderin [Source:NCBI gene;Acc:420588]	SCIN	IPR030012	Adseverin	Adseverin
-ENSGALG00000010770.7	scinderin [Source:NCBI gene;Acc:420588]	SCIN	IPR036180	Gelsolin-like_dom_sf	Gelsolin-like domain superfamily
-ENSGALG00000014730.7	ELOVL fatty acid elongase 7 [Source:NCBI gene;Acc:431579]	ELOVL7	IPR002076	ELO_fam	ELO family
-ENSGALG00000014730.7	ELOVL fatty acid elongase 7 [Source:NCBI gene;Acc:431579]	ELOVL7	IPR030457	ELO_CS	ELO family, conserved site
-```
-
-You can do the same with the down-regulated genes.
-```
-$ cut -f 1 dn-2.tsv > dn-2ids.txt
-$ grep -f dn-2ids.txt mart_export.txt | head
-ENSGALG00000016736.6	cytoplasmic FMR1 interacting protein 1 [Source:NCBI gene;Acc:418677]	CYFIP1	IPR008081	Cytoplasmic_FMR1-int	Cytoplasmic FMR1-interacting
-ENSGALG00000016736.6	cytoplasmic FMR1 interacting protein 1 [Source:NCBI gene;Acc:418677]	CYFIP1	IPR009828	DUF1394	Protein of unknown function DUF1394
-ENSGALG00000030229.2	CUB and Sushi multiple domains 2 [Source:NCBI gene;Acc:419640]	CSMD2	IPR000436	Sushi_SCR_CCP_dom	Sushi/SCR/CCP domain
-ENSGALG00000030229.2	CUB and Sushi multiple domains 2 [Source:NCBI gene;Acc:419640]	CSMD2	IPR000859	CUB_dom	CUB domain
-ENSGALG00000030229.2	CUB and Sushi multiple domains 2 [Source:NCBI gene;Acc:419640]	CSMD2	IPR035914	Sperma_CUB_dom_sf	Spermadhesin, CUB domain superfamily
-ENSGALG00000030229.2	CUB and Sushi multiple domains 2 [Source:NCBI gene;Acc:419640]	CSMD2	IPR035976	Sushi/SCR/CCP_sf	Sushi/SCR/CCP superfamily
-ENSGALG00000039826.2	cyclic nucleotide gated channel alpha 3 [Source:NCBI gene;Acc:396144]	CNGA3	IPR000595	cNMP-bd_dom	Cyclic nucleotide-binding domain
-ENSGALG00000039826.2	cyclic nucleotide gated channel alpha 3 [Source:NCBI gene;Acc:396144]	CNGA3	IPR005821	Ion_trans_dom	Ion transport domain
-ENSGALG00000039826.2	cyclic nucleotide gated channel alpha 3 [Source:NCBI gene;Acc:396144]	CNGA3	IPR014710	RmlC-like_jellyroll	RmlC-like jelly roll fold
-ENSGALG00000039826.2	cyclic nucleotide gated channel alpha 3 [Source:NCBI gene;Acc:396144]	CNGA3	IPR018488	cNMP-bd_CS	Cyclic nucleotide-binding, conserved site
-```
 
 __Are any involved in a process I am super interested in?__  
 Of our most signficant up- and down-regualted genes, are any involved in stem cell proliferation (GO:0072089) or pigmenation (GO:0043473)?
 
-```
-$ grep -f up2ids.txt  proliferation_mart_export.txt
-ENSGALG00000040493	ENSGALG00000040493.2	pleiotrophin [Source:NCBI gene;Acc:418125]	GO:0007406	negative regulation of neuroblast proliferation
-
-$ grep -f dn-2ids.txt  proliferation_mart_export.txt
-ENSGALG00000039861	ENSGALG00000039861.2	plexin B2 [Source:NCBI gene;Acc:425938]	GO:0007405	neuroblast proliferation
-
-$ grep -f up2ids.txt  pigmentation_mart_export.txt
-
-$ grep -f dn-2ids.txt  pigmentation_mart_export.txt
-ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [Source:NCBI gene;Acc:424306]	GO:0045636	positive regulation of melanocyte differentiation
-ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [Source:NCBI gene;Acc:424306]	GO:0048066	developmental pigmentation
-ENSGALG00000040465	ENSGALG00000040465.2	zinc finger E-box binding homeobox 2 [Source:NCBI gene;Acc:424306]	GO:1903056	regulation of melanosome organization
-```
+1. Get a list of genes involved in stem cell proliferation (GO:0072089). [Need Help](biomart_get_gene_and_go_info/README.sh)
+2. Are any of our up-regulated also in our list of genes involved in stem cell proliferation?  [Need Help](biomart_get_gene_and_go_info/README.sh#upregulated_and_stem_cell_proliferation)
 
