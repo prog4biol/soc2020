@@ -1,12 +1,101 @@
 # Find most up- and down- regulated genes
 
-to find the most up/down-regulated genes we will have to sort by the 4th column, the 2logfoldchange column
+To find the most up/down-regulated genes we will have to sort by the 4th column, the log2foldchange column
 
-Make sure to start with the data sorted and filted by pvalue significance. 
+Make sure to start with the data sorted and filted by pvalue significance (pvalue_sorted_significant_only.tsv). 
 
-Since after reveiw of the 4th column, there are no scientific notations we can sort with a simple numeric sort.
+## Review 4th column (log2foldchange)
+Check the 4th column to make sure there are no unexpected values:
+```
+$ cut -f 4 pvalue_sorted_significant_only.tsv | sort | uniq
+-0.2
+-0.3
+-0.4
+-0.5
+-0.6
+-0.7
+-0.8
+-0.9
+-1
+-1.1
+-1.2
+-1.3
+-1.4
+-1.5
+-1.6
+-1.7
+-1.8
+-1.9
+-2
+-2.1
+-2.2
+-2.3
+-2.4
+-2.5
+-2.6
+-2.7
+-2.9
+-3
+-3.1
+-3.3
+-3.4
+-3.5
+-3.6
+-3.7
+-3.8
+-3.9
+-4.1
+-4.5
+-4.8
+-5.3
+-7
+-8
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+1.1
+1.2
+1.3
+1.4
+1.5
+1.6
+1.7
+1.8
+1.9
+2
+2.1
+2.2
+2.3
+2.4
+2.5
+2.6
+2.7
+2.8
+2.9
+3
+3.1
+3.2
+3.3
+3.4
+3.5
+3.6
+3.7
+3.8
+4
+4.2
+4.3
+5.1
+g1_g2.log2foldchange
+``` 
+  - After a quick reveiw of the 4th column, there are no scientific notations we can sort with a simple numeric sort.
 
-## Sort it first
+## Sort by log fold change
 Let's sort and check the top and bottom of our file to make sure we are getting what we expect:
 ```
 $  sort -t$'\t' -k4 -n pvalue_sorted_significant_only.tsv |  head
@@ -21,8 +110,9 @@ ENSGALG00000039264	SLA	3.3960317531256e-97	-3.9
 ENSGALG00000016906	SPRY2	7.1093323557451e-55	-3.8
 ENSGALG00000027353	C10orf71	1.29880461971355e-212	-3.7
 ```
+ - Looks good. Values looks like they are correctly sorted from smallest to largest at the top of the file
 
-And the bottom or tail of the file:
+Check the bottom or tail of the file to be sure it is sorted properly:
 ```
 $  sort -t$'\t' -k4 -n pvalue_sorted_significant_only.tsv |  tail
 ENSGALG00000047182		8.49031135004632e-58	3.5
@@ -36,23 +126,25 @@ ENSGALG00000053328		6.06296117790466e-59	4.2
 ENSGALG00000006456	C14H16orf45	4.83210331845551e-134	4.3
 ENSGALG00000026591	GNG12	2.48713188587058e-106	5.1
 ```
-The file is sorted from smalled to largest values, just as we wanted.
+  - The file is sorted from smalled to largest values, just as we wanted.
 
-Let's create a new file with our data sorted by log fold change.
+Let's create a new file with our data sorted by log fold change:
 ```
 $  sort -t$'\t' -k4 -n pvalue_sorted_significant_only.tsv > logfold_sorted.tsv
 ```
 
 ## Get the extremes
 
-Now we need to decide if we want the top and bottom 100 or if we want to keep everything below and above a specific cut off. Let's do both. We will start with the simplest.
+Now we need to decide if we want the top 100 down-regulated and the top 100 up-regulated or if we want to keep everything below and above a specific cut off. Let's do both. We will start with the simplest.
 
 What are the top 100 down-regulated genes?
+
+Use the file sorted by log2foldchange column (logfold_sorted.tsv) and save the top 100 lines:
 ```
 $ head -n100 logfold_sorted.tsv > top_100_dn_regulated.tsv 
 ```
 
-Check it!
+Check it! Use head to make sure the top of your new files looks like you expect:
 ```
 $ head top_100_dn_regulated.tsv
 ENSGALG00000020078	H3F3C	0	-8
@@ -65,14 +157,20 @@ ENSGALG00000031768	SPO11	3.97130937569517e-59	-3.9
 ENSGALG00000039264	SLA	3.3960317531256e-97	-3.9
 ENSGALG00000016906	SPRY2	7.1093323557451e-55	-3.8
 ENSGALG00000027353	C10orf71	1.29880461971355e-212	-3.7
+```
+  - Look's like we expect! Log fold change values are decreasing.
 
+Make sure there are the correct number of lines: 
+```
 $ wc -l top_100_dn_regulated.tsv
      100 top_100_dn_regulated.tsv
 ```
-Perfect! Log fold change values are decreasing, and we have 100 lines!
+  - And we have 100 lines!
 
 
 What are the top 100 up-regulated genes?
+
+Use the file sorted by log2foldchange column (logfold_sorted.tsv) and save the last 100 lines:
 ```
 $ tail -n100 logfold_sorted.tsv | head
 ENSGALG00000027961	PCASP2	1.69866188570141e-31	1.7
@@ -97,9 +195,13 @@ ENSGALG00000053328		6.06296117790466e-59	4.2
 ENSGALG00000006456	C14H16orf45	4.83210331845551e-134	4.3
 ENSGALG00000026591	GNG12	2.48713188587058e-106	5.1
 ```
-Hmm. That isn't quite the order we want, right. The top or head of our list is not in the order we want. We want the most up-regulated at the top.
+ - Hmm. That isn't quite the order we want, right.   
+ - The top or head of our list is not in the order we want.  
+ -  We want the most up-regulated at the top.
 
-Let's get the bottom 100 lines, then reverse the order:
+Let's get the top 100 up-regulated genes sorted with the most up-regulated on top.
+
+Get the bottom 100 lines, then reverse the order:
 ```
 $ tail -r -n100 logfold_sorted.tsv | head
 ENSGALG00000026591	GNG12	2.48713188587058e-106	5.1
@@ -124,19 +226,21 @@ ENSGALG00000041611		6.67942448720794e-08	1.7
 ENSGALG00000031812	TDRKH	4.17455719510327e-08	1.7
 ENSGALG00000027961	PCASP2	1.69866188570141e-31	1.7
 ```
-That is what we want!!
+ - That is what we want!!  
 
-Let's save the top 100 up-regulated genes.
+Let's save the top 100 up-regulated genes: 
 ```
 $ tail -r -n100 logfold_sorted.tsv > top_100_up_regulated.tsv
 ```
 
 
 ## Most signficant changes
-Now let's get only that genes that have a large difference between the two conditons
+Now let's get only that genes that have a large difference between the two conditons, based on the value of the log fold change.
 
 
-Filter out all lines that are > -2:
+Let's find and keep the genes that are significantly down-regulated, log2foldchange <= -2. Filter, or remove all lines that are > -2. 
+
+Find the line number of the last line we want to keep:
 ```
 cat -n top_100_dn_regulated.tsv | more
 ...
@@ -149,10 +253,15 @@ cat -n top_100_dn_regulated.tsv | more
     54  ENSGALG00000009172      OSBPL6  6.1254332770914e-82     -1.9
     55  ENSGALG00000010820      CHGA    1.00820079319201e-12    -1.9
 ```
-Line 51 is the last line we want to keep.
+ - Line 51 is the last line we want to keep.
 
+Save the first 51 lines in a new file: 
 ```
 $ head -n51 top_100_dn_regulated.tsv > dn-2.tsv
+```
+
+Check the file:
+```
 $ tail dn-2.tsv
 ENSGALG00000008970	NRK	7.15258964094999e-58	-2
 ENSGALG00000011024	CACHD1	4.31012629122905e-11	-2
@@ -170,8 +279,9 @@ $ wc -l dn-2.tsv
 ```
 
 
-Now let's get the up-regulated genes.
-Let's filter all the lines that are < 2:
+Now let's get the up-regulated genes, genes that have a log 2 fold change >= 2. Filter all the lines that are < 2.
+
+Find the line number of the last line we want to keep:
 ```
 $ cat -n top_100_up_regulated.tsv | more
 ...
@@ -185,8 +295,9 @@ $ cat -n top_100_up_regulated.tsv | more
     70  ENSGALG00000045021              3.73801211076943e-10    1.9
     71  ENSGALG00000043728              8.30858747493683e-16    1.9
 ``` 
-Line 67 is the last data point we want to keep
+ - Line 67 is the last data point we want to keep
 
+Save the first 67 lines in a new file: 
 ```
 $ head -n67 top_100_up_regulated.tsv > up2.tsv
 $ head up2.tsv
@@ -200,6 +311,10 @@ ENSGALG00000048302		9.7889149897967e-41	3.7
 ENSGALG00000030602	ADAM33	8.84702727723148e-114	3.7
 ENSGALG00000007416	CD3E	2.42674555681373e-48	3.6
 ENSGALG00000047182		8.49031135004632e-58	3.5
+```
+
+Check the file:  
+```
 $ tail up2.tsv
 ENSGALG00000021271	MPZL3	9.81852164392542e-12	2.1
 ENSGALG00000006112	SCN5A	1.44173131129112e-12	2.1
@@ -213,14 +328,16 @@ ENSGALG00000006318	IL21R	5.03533323722168e-16	2
 ENSGALG00000005402	DYNLRB2	7.15311215516991e-13	2
 
 ```
-Just want we wanted!!
+ - Just want we wanted!!
 
 
 ## Other way to do the same
 
 Want to see one line to get all this from the first unmanipulated file?
+
+Use `awk` to keep only the lines in the 3rd column (pvalue) that have values that are < 0.001 AND have values in the 4th column (log2foldchange) that are >= 2 THEN print the 1st column (gene ID) and the 4th column (log2foldchange), THEN sort by the new 2nd column (log2foldchage): 
 ```
-$ awk -F "\t" '{if ($3 <= 0.001 && $4 >= 2) {print $1 "\t" $4}}' E-MTAB-2754-analytics.tsv | sort -k2 -n -r  | head
+$ awk -F "\t" '{if ($3 < 0.001 && $4 >= 2) {print $1 "\t" $4}}' E-MTAB-2754-analytics.tsv | sort -k2 -n -r  | head
 ENSGALG00000026591	5.1
 ENSGALG00000006456	4.3
 ENSGALG00000053328	4.2
