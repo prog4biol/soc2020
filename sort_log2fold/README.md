@@ -1,4 +1,4 @@
-# Find most up- and down- regulated genes
+# Find up- and down- regulated genes
 
 To find the most up/down-regulated genes we will have to sort by the 4th column, the log2foldchange column
 
