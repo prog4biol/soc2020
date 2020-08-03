@@ -17,10 +17,10 @@ You work with chickens and have completed an RNAseq experiment. You have two con
 
 You performed differential expression analysis, perhaps with cuffdiff. 
 
-[Part 1](#part_1_get_expression_data): You are going to download your data.  
-[Part 2](#part_2_ceate_lists_of_up_and_down_regulated_genes): You are going to create up- and down-regualted gene lists.  
-[Part 3](#part_3_find_out_more_about_your_up_and_down_regulated_genes): You are going to find out more information about what genes are in your gene lists.  
-[Part 4](#part_4_searching_for_genes_with_go_terms): You are going to search your gene list for genes involved in your favorite processes.
+[Part 1](#part-1-get-expression-data): You are going to download your data.  
+[Part 2](#part-2-create-lists-of-up--and-down-regulated-genes): You are going to create up- and down-regualted gene lists.  
+[Part 3](#part-3-find-out-more-about-your-up--and-down-regulated-genes): You are going to find out more information about what genes are in your gene lists.  
+[Part 4](#part-4-searching-for-genes-with-go-terms): You are going to search your gene list for genes involved in your favorite processes.
 
 ***
 ### Part 1: Get expression data 
