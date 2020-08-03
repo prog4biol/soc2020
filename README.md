@@ -17,7 +17,10 @@ You work with chickens and have completed an RNAseq experiment. You have two con
 
 You performed differential expression analysis, perhaps with cuffdiff. 
 
+***
 ### Part 1: Get expression data 
+***
+
 __Let's get the expression data from Ensembl__  
 
 Part 1 Tasks:  
@@ -43,8 +46,10 @@ ENSGALG00000000067	SPR	0.0560358954256604	-0.4
 ENSGALG00000000071		0.878861305389193	0
 ```
 
-
+***
 ### Part 2: Create lists of up- and down-regulated genes
+***
+
 __What is it that people want to do usually with differential expression data?__  
 __They usually want to find the top up regulated genes and the top down regulated genes.__  
 
@@ -63,8 +68,9 @@ Part 2 Tasks:
  c. [Get a list of all the genes with the most signifant changes](sort_log2fold/README.md#most-signficant-changes)   
  d. [Do it a different way](sort_log2fold/README.md#other-way-to-do-the-same)   
 
-
+***
 ### Part 3: Find out more about our up- and down-regulated genes.
+***
 
 __Now what are these genes?__  
 We are going to mine gene info data from Ensembl [BioMart](http://www.ensembl.org/biomart/martview). BioMart is a SUPER handy tool (if your organism is in Ensembl).  
@@ -84,9 +90,11 @@ Part 3 Tasks:
 2. [Find the gene information about out upregulated genes.](gene_info_upregulated/README.md)
 3. [Find the gene information about out downregulated genes.](gene_info_upregulated/README.md)
 
-
+***
 ### Part 4: Searching for Genes with GO terms
-__Are any involved in a process I am super interested in?__  
+***
+
+__Are any of our up- or down-regualted genes involved in a process I am super interested in?__  
 
 Of our most signficant up- and down-regualted genes, are any involved in stem cell proliferation (GO:0072089) or pigmenation (GO:0043473)?
 
