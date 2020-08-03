@@ -20,6 +20,8 @@ You performed differential expression analysis, perhaps with cuffdiff.
 ### Part 1: Get expression data 
 __Let's get the expression data from Ensembl__  
 
+Part 1 TASKS
+-----
 1. Go to [EBI Expression Atlas](https://www.ebi.ac.uk/gxa/home)
 2. Select [chicken](https://www.ebi.ac.uk/gxa/experiments?experimentType=differential&species=gallus+gallus)
 3. Check box to download the first experiment, "RNA-seq of H3.3 knockout and wild type chicken DT40 cells". If you get lost, directly download [here](https://www.ebi.ac.uk/gxa/experiments-content/E-MTAB-2754/resources/DifferentialSecondaryDataFiles.RnaSeq/analytics)
@@ -51,7 +53,7 @@ Let's do it!!
 
 Where do we start?
 
-TASKS
+Part 2 TASKS
 -----
 1. We want to make sure we are only looking at data points that are statically signifant, p-value > 0.001.  
   a. [Sort expression file by p-value](sort_by_pvalue/README.md)  
@@ -79,7 +81,7 @@ Ensembl has 6 different sites for different groups of organisms:
 
 Let's find out more about chicken genes using Ensembl's [BioMart](http://www.ensembl.org/biomart/martview) tool.
 
-TASKS
+Part 3 TASKS
 -----
 1. Retrieve the gene ID, gene name, gene description, and interporscan ID, short description, and description for every chicken gene. [Need Help?](biomart_get_gene_info/README.md)
 2. [Find the gene information about out upregulated genes.](gene_info_upregulated/README.md)
@@ -91,7 +93,7 @@ __Are any involved in a process I am super interested in?__
 
 Of our most signficant up- and down-regualted genes, are any involved in stem cell proliferation (GO:0072089) or pigmenation (GO:0043473)?
 
-TASKS
+Part 4 TASKS
 -----
 1. Get a list of genes involved in stem cell proliferation (GO:0072089). [Need Help?](biomart_get_gene_and_go_info/README.md)
 2. Are any of our up-regulated also in our list of genes involved in stem cell proliferation?  [Need Help?](biomart_get_gene_and_go_info/README.sh#upregulated_and_stem_cell_proliferation)
