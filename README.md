@@ -2,7 +2,7 @@
 
 Sequencing of new genomes has become commonplace. In this episode of SOC, Sofia Robb will discuss available open source methods for sharing genome-scale data if it is not feasible to share it through standard databases such as Ensembl. She will also demonstrate helpful ways to mine Ensembl data with Biomart and useful UNIX command line tricks for sorting, searching, and reformatting text data files.
 
-[Link to Genome Tools Talk](talk/SofiaRobb_0804202.WY.pdf) 
+[Link to Genome Tools Talk](talk/SofiaRobb_0804202.WY.pdf)  
 [Link to Career Path Talk](talk/WY_careerTalk.pdf) 
 
 ## Hands on  Workshop: Let's LARP
