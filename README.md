@@ -99,7 +99,7 @@ Part 3 Tasks:
 ### Part 4: Searching for Genes with GO terms
 ***
 
-__Are any of our up- or down-regualted genes involved in a process I am super interested in?__  
+__Are any of our up- or down-regualted genes involved in a process you are super interested in?__  
 
 Of our most signficant up- and down-regualted genes, are any involved in stem cell proliferation (GO:0072089) or pigmenation (GO:0043473)?
 
