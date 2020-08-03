@@ -4,8 +4,8 @@ Sequencing of new genomes has become commonplace. In this episode of SOC, Sofia 
 
 ## Talks
 
-[Link to Genome Tools Talk](talk/SofiaRobb_0804202.WY.pdf)  
-[Link to Career Path Talk](talk/WY_careerTalk.pdf) 
+[Genome Tools Talk](talk/SofiaRobb_0804202.WY.pdf)  
+[Career Path Talk](talk/WY_careerTalk.pdf) 
 
 ## Hands on  Workshop: Let's LARP
 
